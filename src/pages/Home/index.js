@@ -49,7 +49,7 @@ function Home() {
 
         {/* content 1*/}
         <div
-          className=" border-b border-[#ddd] pb-20"
+          className="border-b border-[#ddd] pb-20"
           style={
             type === "EPISODES" ? { backgroundColor: "" } : { display: "none" }
           }
