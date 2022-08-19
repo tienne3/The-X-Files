@@ -22,7 +22,7 @@ function Payment() {
           <p className="text-[#636E85] text-[15px] lg:text-[17px] mt-[5px]">
             Switch plans or cancel anytime.
           </p>
-          {/* button tabs */}
+          {/* Button tabs */}
           <div>
             {tabs.map((tab) => (
               <button
