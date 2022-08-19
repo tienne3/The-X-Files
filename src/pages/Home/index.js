@@ -7,6 +7,7 @@ import Extras from "~/components/Extras";
 import SelectYourPlan from "~/components/SelectYourPlan";
 
 const tabs = ["EPISODES", "EXTRAS", "DETAILS"];
+// this is homepage
 function Home() {
   const [type, setType] = useState("EPISODES");
   const [showGoToTop, setShowGoToTop] = useState(false);
