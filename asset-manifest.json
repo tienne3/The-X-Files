@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/seris-TheX-Files/static/css/main.05056307.css",
+    "main.js": "/seris-TheX-Files/static/js/main.dfc2de1f.js",
+    "static/js/787.1ee862cf.chunk.js": "/seris-TheX-Files/static/js/787.1ee862cf.chunk.js",
+    "static/media/bg3.jpg": "/seris-TheX-Files/static/media/bg3.763bd55248c5555b6d7a.jpg",
+    "static/media/bg2.jpg": "/seris-TheX-Files/static/media/bg2.6d2b7855ea73d56fc47c.jpg",
+    "static/media/brand.png": "/seris-TheX-Files/static/media/brand.322e3f98b6a13eb39cd6.png",
+    "index.html": "/seris-TheX-Files/index.html",
+    "main.05056307.css.map": "/seris-TheX-Files/static/css/main.05056307.css.map",
+    "main.dfc2de1f.js.map": "/seris-TheX-Files/static/js/main.dfc2de1f.js.map",
+    "787.1ee862cf.chunk.js.map": "/seris-TheX-Files/static/js/787.1ee862cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05056307.css",
+    "static/js/main.dfc2de1f.js"
+  ]
+}
