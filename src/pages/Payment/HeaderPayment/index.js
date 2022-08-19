@@ -28,7 +28,7 @@ function HeaderPayment() {
     <div>
       <header className="flex items-center justify-between mx-8 h-[60px] border-b border-b-[#f1f1f1]">
         {/* logo hulu */}
-        <Link to={"/"}>
+        <Link to={"/series-TheX-Files"}>
           <svg
             viewBox="0 -2 61 24"
             height="24"

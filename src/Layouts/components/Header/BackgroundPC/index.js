@@ -47,7 +47,7 @@ function BackgroundPC() {
         <div className="w-full absolute z-50 top-[54px] ">
           <div className="flex items-center justify-between mx-10">
             {/* logo hulu */}
-            <Link to={"/"}>
+            <Link to={"/series-TheX-Files"}>
               <svg
                 viewBox="0 -2 61 24"
                 height="24"

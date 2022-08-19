@@ -7,7 +7,7 @@ import Register from "~/pages/Resgiter";
 
 // Public Routes
 const publicRoutes = [
-  { path: "/", component: Home },
+  { path: "/series-TheX-Files", component: Home },
   { path: "/payment", component: Payment, layout: HeaderOnly },
   { path: "/register", component: Register, layout: HeaderOnly },
 ];
