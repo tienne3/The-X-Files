@@ -1,7 +1,7 @@
 {
   "name": "the-x-files",
   "version": "0.1.0",
-  "homepage": "https://tienne3.github.io/seris-TheX-Files",
+  "homepage": "https://tienne3.github.io/series-TheX-Files",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
