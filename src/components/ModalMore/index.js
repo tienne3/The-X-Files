@@ -10,7 +10,7 @@ function ModalMore(props) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative px-6 md:px-8 lg:px-10 bg-white text-black w-[80%] sm:w-[80%] md:w-[600px] h-[370px] sm:h-[340px] lg:h-[360px] xl:h-[400px] z-50 mx-auto my-auto mt-[150px] sm:mt-[180px] lg:mt-40 shadow-xl p-10"
+        className="relative px-5 md:px-8 lg:px-10 bg-white text-black w-[80%] sm:w-[80%] md:w-[600px] h-[410px] sm:h-[300px] md:h-[340px] lg:h-[360px] xl:h-[400px] z-50 mx-auto my-auto mt-[150px] sm:mt-[180px] lg:mt-40 shadow-xl p-10"
       >
         <div
           onClick={handleHide}
@@ -21,7 +21,7 @@ function ModalMore(props) {
         <h3 className="text-[#0B0C0F] font-bold text-[16px] md:text-[18px] lg:text-[20px] xl:text-[25px] pt-[8px] md:pt-[10px] xl:pt-3">
           The X-Files
         </h3>
-        <p className="text-[13px] lg:text-[14px] xl:text-[16px] leading-5 md:leading-6 text-gray-900 xl:tracking-wide mt-5 lg:mb-5 mb-3">
+        <p className="text-[13px] lg:text-[14px] xl:text-[16px] leading-5 md:leading-6 text-gray-900 xl:tracking-wide mt-2 md:mt-5 lg:mb-5 mb-3">
           The truth is out there. FBI agents Scully and Mulder seek it in this
           sci-fi phenomenon about their quest to explain the seemingly
           unexplainable. Their strange cases include UFO sightings, alien
@@ -53,7 +53,7 @@ function ModalMore(props) {
           </ul>
         </div>
 
-        <button className="text-[10px] mt-6 md:mt-5 text-gray-900 px-1 rounded font-bold border border-[#ccc]">
+        <button className="text-[10px] mt-4 sm:mt-6 text-gray-900 px-1 rounded font-bold border border-[#ccc]">
           HD
         </button>
       </div>
