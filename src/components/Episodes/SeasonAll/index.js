@@ -39,7 +39,7 @@ export const SeasonAll = (props) => {
   return (
     <div>
       {/* btn season */}
-      <div onClick={handleSelect} className="relative">
+      <div onClick={handleSelect} className="relative w-[280px]">
         <button className="z-50 mb-[50px] w-[280px] px-5 flex justify-between items-center h-[48px] bg-[#272C34] text-white text-[15px] rounded-md hover:bg-[#444548]">
           {type}
           <span className="ml-10">
