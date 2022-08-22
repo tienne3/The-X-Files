@@ -30,23 +30,12 @@ export const SeasonAll = (props) => {
     props.onClick();
   };
 
-  // test
+  //
   useEffect(() => {
-    const payload = {
-      query:
-        '\n  query {\n    hub(path: "/series/the-x-files-d6a7aec6-72d2-46bb-b337-2cb412df64c8/season/10") {\n      items {\n        id\n        season\n        number\n        description\n        name\n        artwork {\n          horizontalHero {\n            path\n          }\n          watermark {\n            path\n          }\n        }\n      }\n    }\n  }\n  ',
-    };
-    axios.post(`https://www.hulu.com/hookup`, payload).then((res) => {
+    axios.get(`http://localhost:3000/${type}`).then((res) => {
       setPosts(res.data.hub.items);
     });
   }, [type]);
-
-  //
-  // useEffect(() => {
-  //   axios.get(`http://localhost:3000/${type}`).then((res) => {
-  //     setPosts(res.data.hub.items);
-  //   });
-  // }, [type]);
   // //////
   return (
     <div>
