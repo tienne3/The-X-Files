@@ -19,7 +19,7 @@ const seasons = [
 export const SeasonAll = (props) => {
   const [showSelectSeason, setShowSelectSeason] = useState(false);
   const [posts, setPosts] = useState([]);
-  const [type, setType] = useState("Season-3");
+  const [type, setType] = useState("Season-1");
 
   const handleSelect = () => {
     setShowSelectSeason(!showSelectSeason);
@@ -30,6 +30,7 @@ export const SeasonAll = (props) => {
     props.onClick();
   };
 
+  //
   useEffect(() => {
     axios.get(`http://localhost:3000/${type}`).then((res) => {
       setPosts(res.data.hub.items);
