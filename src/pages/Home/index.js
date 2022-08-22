@@ -51,9 +51,7 @@ function Home() {
         {/* content 1*/}
         <div
           className="border-b border-[#ddd] pb-20"
-          style={
-            type === "EPISODES" ? { backgroundColor: "" } : { display: "none" }
-          }
+          style={type === "EPISODES" ? {} : { display: "none" }}
         >
           <Episodes />
         </div>
@@ -61,9 +59,7 @@ function Home() {
         {/* content 2*/}
         <div
           className=" border-b border-[#ddd] pb-20"
-          style={
-            type === "EXTRAS" ? { backgroundColor: "" } : { display: "none" }
-          }
+          style={type === "EXTRAS" ? {} : { display: "none" }}
         >
           <Extras />
         </div>
@@ -71,9 +67,7 @@ function Home() {
         {/* content 3*/}
         <div
           className=" border-b border-[#ddd] pb-20"
-          style={
-            type === "DETAILS" ? { backgroundColor: "" } : { display: "none" }
-          }
+          style={type === "DETAILS" ? {} : { display: "none" }}
         >
           <Details />
         </div>
@@ -82,7 +76,7 @@ function Home() {
       {showGoToTop && (
         <button
           onClick={() => window.scrollTo(0, 0)}
-          className="fixed text-[22px] bottom-10 right-10 bg-primary hover:bg-[#04cd6a] px-3 py-2 rounded-xl"
+          className="fixed text-[22px] bottom-10 right-10 bg-primary hover:bg-[#04cd6a] px-3 py-[6px] rounded-xl"
         >
           <FontAwesomeIcon icon={faAngleUp} />
         </button>
