@@ -25,12 +25,22 @@ function Home() {
 
   return (
     <div className="wrapper">
+      <div className="flex justify-center px-2 mx-auto mt-5 md:mt-0 ">
+        <iframe
+          className="aspect-video w-full h-full sm:w-[560px] sm:h-[315px]"
+          src="https://www.youtube.com/embed/Vpqffgak7To"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
       <div className="mx-5 md:mx-5 lg:mx-10 mt-8 md:mt-0 mb-[50px]">
         {/* button tabs */}
         <div className="border-b border-b-[#ccc]">
           {tabs.map((tab) => (
             <button
-              className="text-[#777] hover:text-[#176ee1] mr-8 md:mr-10 pb-3 md:pb-5 text-[14px] font-bold tracking-widest border-b-[4px] border-b-transparent"
+              className="text-[#777] hover:text-textBlue mr-8 md:mr-10 pb-3 md:pb-5 text-[14px] font-bold tracking-widest border-b-[4px] border-b-transparent"
               onClick={() => setType(tab)}
               style={
                 type === tab

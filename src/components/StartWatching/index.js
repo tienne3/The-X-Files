@@ -68,10 +68,10 @@ function StartWatching(props) {
         <p className="text-[20px] md:text-[23px] lg:text-[25px] text-center mt-10 md:mt-[50px] lg:mt-[60px]">
           Start watching <span className="font-bold">The X-Files</span>
         </p>
-        <p className="text-[#586174] text-[15px] md:text-[16px] lg:text-[17px] mt-1 text-center">
+        <p className="text-textColor text-[15px] md:text-[16px] lg:text-[17px] mt-1 text-center">
           11 seasons available (218 episodes)
         </p>
-        <p className="text-[#586174] text-center text-[15px] md:text-[16px] lg:text-[17px] mt-4 mb-5">
+        <p className="text-textColor text-center text-[15px] md:text-[16px] lg:text-[17px] mt-4 mb-5">
           No hidden fees, equipment rentals, or installation appointments.
         </p>
 
@@ -91,7 +91,7 @@ function StartWatching(props) {
             START YOUR FREE TRIAL
           </button>
         </Link>
-        <p className="text-[13px] tracking-wider mt-[50px] md:mt-4 text-center text-[#586174] font-normal">
+        <p className="text-[13px] tracking-wider mt-[50px] md:mt-4 text-center text-textColor font-normal">
           For new subscribers only
         </p>
       </div>

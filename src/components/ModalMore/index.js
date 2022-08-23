@@ -18,7 +18,7 @@ function ModalMore(props) {
         >
           &times;
         </div>
-        <h3 className="text-[#0B0C0F] font-bold text-[16px] md:text-[18px] lg:text-[20px] xl:text-[25px] pt-[8px] md:pt-[10px] xl:pt-3">
+        <h3 className="text-textColorPrimary font-bold text-[16px] md:text-[18px] lg:text-[20px] xl:text-[25px] pt-[8px] md:pt-[10px] xl:pt-3">
           The X-Files
         </h3>
         <p className="text-[13px] lg:text-[14px] xl:text-[16px] leading-5 md:leading-6 text-gray-900 xl:tracking-wide mt-2 md:mt-5 lg:mb-5 mb-3">

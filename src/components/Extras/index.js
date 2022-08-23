@@ -1,10 +1,10 @@
-import { extras } from "./ApiExtras";
 import StartWatching from "../StartWatching";
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 function Extras() {
-  const extrasObj = extras.items;
   const [modalStartWatching, setModalStartWatching] = useState(false);
+  const [films, setFilms] = useState([]);
 
   // đóng, mở start watching
   const handleStartWatching = () => {
@@ -23,15 +23,24 @@ function Extras() {
     };
   });
 
+  //
+  useEffect(() => {
+    axios
+      .get(`https://630390f0761a3bce77da0126.mockapi.io/api/series`)
+      .then((res) => {
+        setFilms(res.data);
+      });
+  }, []);
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 sm:gap-x-5 lg:gap-x-6 gap-y-10 lg:gap-y-[60px] mt-10 ">
-      {extrasObj.map((film) => (
+      {films.map((film) => (
         <div key={film.id}>
           <div className="">
             <div className="relative">
               <img
                 className="z-10 w-full rounded-xl hover:brightness-75"
-                src={film.img}
+                src={film.path}
                 alt={film.description}
               />
               <span
@@ -40,8 +49,8 @@ function Extras() {
               ></span>
             </div>
 
-            {/* desc */}
-            <p className="text-[14px] text-[#0B0C0F] font-bold md:tracking-wide mt-4 md:mt-2">
+            {/* desciption */}
+            <p className="text-[14px] text-textColorPrimary font-bold md:tracking-wide mt-4 md:mt-2">
               {film.description}
             </p>
           </div>

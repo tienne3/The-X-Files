@@ -1,10 +1,10 @@
 function Details() {
   return (
     <div className="mt-11 max-w-[650px]">
-      <p className="text-[#0B0C0F] text-[14px] sm:text-[15px] md:text-[17px] font-semibold mb-2">
+      <p className="text-textColorPrimary text-[14px] sm:text-[15px] md:text-[17px] font-semibold mb-2">
         About this Show
       </p>
-      <p className="text-[#0B0C0F] text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold">
+      <p className="text-textColorPrimary text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold">
         The X-Files
       </p>
       <p className="text-[#6E7A91] text-[14px] sm:text-[15px] md:text-[16px] mb-5 mt-2">

@@ -103,7 +103,7 @@ function SelectYourPlan() {
                 Hulu
               </p>
               <Link to={"/register"}>
-                <button className="bg-[#0b0c0f] font-semibold hover:bg-[#3c3d3f] duration-300 tracking-normal sm:tracking-wider text-[14px] text-white w-full h-[40px] sm:h-[48px] rounded-md mt-3">
+                <button className="bg-textColorPrimary font-semibold hover:bg-[#3c3d3f] duration-300 tracking-normal sm:tracking-wider text-[14px] text-white w-full h-[40px] sm:h-[48px] rounded-md mt-3">
                   $6.99 / MONTH
                 </button>
               </Link>
@@ -124,7 +124,7 @@ function SelectYourPlan() {
                 Hulu
               </p>
               <Link to={"/register"}>
-                <button className="bg-[#0b0c0f] font-semibold hover:bg-[#3c3d3f] duration-300  tracking-normal sm:racking-wider text-[12px] sm:text-[13px] md:text-[14px] text-white w-full h-[40px] sm:h-[48px] rounded-md mt-3">
+                <button className="bg-textColorPrimary font-semibold hover:bg-[#3c3d3f] duration-300  tracking-normal sm:racking-wider text-[12px] sm:text-[13px] md:text-[14px] text-white w-full h-[40px] sm:h-[48px] rounded-md mt-3">
                   $12.99 / MONTH
                 </button>
               </Link>
@@ -156,7 +156,7 @@ function SelectYourPlan() {
                 Hulu
               </p>
               <Link to={"/register"}>
-                <button className="bg-[#0b0c0f] font-semibold hover:bg-[#3c3d3f] duration-300  tracking-normal sm:racking-wider text-[12px] sm:text-[13px] md:text-[14px] text-white w-full h-[40px] sm:h-[48px] rounded-md mt-3">
+                <button className="bg-textColorPrimary font-semibold hover:bg-[#3c3d3f] duration-300  tracking-normal sm:racking-wider text-[12px] sm:text-[13px] md:text-[14px] text-white w-full h-[40px] sm:h-[48px] rounded-md mt-3">
                   $13.99 / MONTH
                 </button>
               </Link>
@@ -182,7 +182,7 @@ function SelectYourPlan() {
                 Hulu (No Ads)
               </p>
               <Link to={"/register"}>
-                <button className="bg-[#0b0c0f] font-semibold hover:bg-[#3c3d3f] duration-300  tracking-normal sm:racking-wider text-[12px] sm:text-[13px] md:text-[14px] text-white w-full h-[40px] sm:h-[48px] rounded-md mt-3">
+                <button className="bg-textColorPrimary font-semibold hover:bg-[#3c3d3f] duration-300  tracking-normal sm:racking-wider text-[12px] sm:text-[13px] md:text-[14px] text-white w-full h-[40px] sm:h-[48px] rounded-md mt-3">
                   $19.99 / MONTH
                 </button>
               </Link>
@@ -208,7 +208,7 @@ function SelectYourPlan() {
                 Hulu + LIVE TV
               </p>
               <Link to={"/register"}>
-                <button className="bg-[#0b0c0f] font-semibold hover:bg-[#3c3d3f] duration-300  tracking-normal sm:racking-wider text-[12px] sm:text-[13px] md:text-[14px] text-white w-full h-[40px] sm:h-[48px] rounded-md mt-3">
+                <button className="bg-textColorPrimary font-semibold hover:bg-[#3c3d3f] duration-300  tracking-normal sm:racking-wider text-[12px] sm:text-[13px] md:text-[14px] text-white w-full h-[40px] sm:h-[48px] rounded-md mt-3">
                   $69.99 / MONTH
                 </button>
               </Link>

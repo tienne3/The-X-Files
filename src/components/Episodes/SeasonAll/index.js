@@ -6,7 +6,7 @@ import axios from "axios";
 const seasons = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
 export const SeasonAll = (props) => {
   const [showSelectSeason, setShowSelectSeason] = useState(false);
-  const [posts, setPosts] = useState([]);
+  const [films, setFilms] = useState([]);
   const [type, setType] = useState("1");
 
   const handleSelect = () => {
@@ -22,7 +22,7 @@ export const SeasonAll = (props) => {
     axios
       .get(`https://6303b2bc0de3cd918b3c60e9.mockapi.io/series/Season-/${type}`)
       .then((res) => {
-        setPosts(res.data.items);
+        setFilms(res.data.items);
       });
   }, [type]);
 
@@ -31,7 +31,7 @@ export const SeasonAll = (props) => {
     <div>
       {/* btn season */}
       <div onClick={handleSelect} className="relative w-[280px]">
-        <button className="z-50 mb-[50px] w-[280px] px-5 flex justify-between items-center h-[48px] bg-[#272C34] text-white text-[15px] rounded-md hover:bg-[#444548]">
+        <button className="z-50 mb-[50px] w-[280px] px-5 flex justify-between items-center h-[48px] bg-[#272C34] text-white text-[15px] rounded-md hover:bg-[#444548] duration-200">
           {`Season ${type}`}
           <span className="ml-10">
             <FontAwesomeIcon icon={faChevronDown} />
@@ -58,10 +58,9 @@ export const SeasonAll = (props) => {
             ))}
         </div>
       </div>
-
       {/* render */}
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 sm:gap-x-5 lg:gap-x-6 gap-y-10 lg:gap-y-[60px]">
-        {posts.map((film) => (
+        {films.map((film) => (
           <div key={film.number}>
             <div className="">
               <div className="relative">
@@ -80,11 +79,11 @@ export const SeasonAll = (props) => {
                 EPISODE {film.number}
               </p>
               {/* film name */}
-              <p className="text-[14px] text-[#0B0C0F] font-bold pb-1">
+              <p className="text-[14px] text-textColorPrimary font-bold pb-1">
                 {film.name}
               </p>
               {/* desc */}
-              <p className="text-[13px] sm:text-[14px] text-[#0B0C0F] tracking-normal md:tracking-wide">
+              <p className="text-[13px] sm:text-[14px] text-textColorPrimary tracking-normal md:tracking-wide">
                 {film.description}
               </p>
             </div>
