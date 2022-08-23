@@ -21,7 +21,6 @@ function SelectYourPlan() {
           Switch plans or cancel anytime.^^
         </p>
       </div>
-
       {/* body */}
       <div className="max-w-[976px] mx-auto flex flex-col lg:flex-row mt-4 pb-6 border-b border-[#ddd]">
         <div className="md:w-full lg:w-[400px]">
@@ -217,7 +216,6 @@ function SelectYourPlan() {
         </div>
         {/*  */}
       </div>
-
       {/* C1 */}
       <div
         className="max-w-[976px] mx-5 md:mx-10 lg:mx-auto flex flex-col md:flex-row mt-4 pb-6"
@@ -417,7 +415,6 @@ function SelectYourPlan() {
           {/*  */}
         </div>
       </div>
-
       {/* C 2 */}
       <div
         className="max-w-[976px] mx-5 md:mx-10 lg:mx-auto flex flex-col md:flex-row mt-4 pb-6"

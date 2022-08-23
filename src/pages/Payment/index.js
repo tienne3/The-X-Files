@@ -42,13 +42,7 @@ function Payment() {
                 {tab}
               </button>
             ))}
-            <div
-              style={
-                type === "BASE PLANS"
-                  ? { backgroundColor: "" }
-                  : { display: "none" }
-              }
-            >
+            <div style={type === "BASE PLANS" ? {} : { display: "none" }}>
               <BasePlans
                 // title
                 titleCol1="Hulu (No Ads)"
@@ -71,13 +65,7 @@ function Payment() {
                 btn="SELECT"
               />
             </div>
-            <div
-              style={
-                type === "BUNDLE / SAVE"
-                  ? { backgroundColor: "" }
-                  : { display: "none" }
-              }
-            >
+            <div style={type === "BUNDLE / SAVE" ? {} : { display: "none" }}>
               <BundleSave
                 // title
                 title2Col1="Hulu (No Ads)"
