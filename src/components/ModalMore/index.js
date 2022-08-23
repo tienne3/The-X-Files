@@ -1,11 +1,7 @@
 function ModalMore(props) {
-  const handleHide = () => {
-    props.onClick();
-  };
-
   return (
     <div
-      onClick={handleHide}
+      onClick={props.onClick}
       className="modal text-semibold fixed z-10 top-0 bottom-0 left-0 right-0 bg-black/[50%] "
     >
       <div
@@ -13,7 +9,7 @@ function ModalMore(props) {
         className="relative px-5 md:px-8 lg:px-10 bg-white text-black w-[80%] sm:w-[80%] md:w-[600px] h-[410px] sm:h-[300px] md:h-[340px] lg:h-[360px] xl:h-[400px] z-50 mx-auto my-auto mt-[150px] sm:mt-[180px] lg:mt-40 shadow-xl p-10"
       >
         <div
-          onClick={handleHide}
+          onClick={props.onClick}
           className="absolute cursor-pointer right-0 top-0 opacity-60 leading-[50px] text-[40px] md:text-[45px] font-thin px-5 text-black"
         >
           &times;

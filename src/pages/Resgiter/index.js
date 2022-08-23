@@ -99,7 +99,7 @@ function Register() {
         </p>
         <button
           style={
-            valueEmail.length > 0 &&
+            valueEmail.length > 6 &&
             valuePassword.length > 0 &&
             valueName.length > 0 &&
             valueDate.length > 0

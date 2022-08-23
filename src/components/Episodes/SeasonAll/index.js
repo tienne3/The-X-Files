@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
+import { AOS } from "aos";
 
 const seasons = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
 export const SeasonAll = (props) => {
@@ -59,7 +60,12 @@ export const SeasonAll = (props) => {
         </div>
       </div>
       {/* render */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 sm:gap-x-5 lg:gap-x-6 gap-y-10 lg:gap-y-[60px]">
+      <div
+        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 sm:gap-x-5 lg:gap-x-6 gap-y-10 lg:gap-y-[60px]"
+        data-aos="fade-up"
+        data-aos-offset="0"
+        data-aos-easing="ease-in-sine"
+      >
         {films.map((film) => (
           <div key={film.number}>
             <div className="">

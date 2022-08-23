@@ -13,13 +13,9 @@ function LoginModal(props) {
     setvaluePassword(e.target.value.trim());
   };
 
-  const handleHide = () => {
-    props.onClick();
-  };
-
   return (
     <div
-      onClick={handleHide}
+      onClick={props.onClick}
       className="modal text-semibold fixed z-50 top-0 bottom-0 left-0 right-0 bg-black/[50%] "
     >
       <div
@@ -27,7 +23,7 @@ function LoginModal(props) {
         className="relative bg-white w-[90%] sm:w-[80%] md:w-[432px] h-[520px] md:h-[560px] lg:h-[600px] z-50 mx-auto my-auto mt-10 lg:mt-[60px] xl:mt-20 shadow-xl py-10 px-6 sm:px-7 md:px-7 lg:px-10"
       >
         <div
-          onClick={handleHide}
+          onClick={props.onClick}
           className="absolute cursor-pointer right-0 top-0 opacity-60 leading-[50px] text-[40px] md:text-[45px] font-thin px-5 text-black"
         >
           &times;
@@ -66,7 +62,7 @@ function LoginModal(props) {
         <br />
         <button
           style={
-            valueEmail.length > 0 && valuePassword.length > 0
+            valueEmail.length > 6 && valuePassword.length > 0
               ? { opacity: 1 }
               : {}
           }

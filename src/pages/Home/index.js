@@ -25,7 +25,7 @@ function Home() {
 
   return (
     <div className="wrapper">
-      <div className="flex justify-center px-2 mx-auto mt-5 md:mt-0 ">
+      <div className="flex justify-center px-2 mx-auto mt-5 md:mt-0 mb-0 md:mb-5 ">
         <iframe
           className="aspect-video w-full h-full sm:w-[560px] sm:h-[315px]"
           src="https://www.youtube.com/embed/Vpqffgak7To"
