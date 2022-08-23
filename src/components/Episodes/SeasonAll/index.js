@@ -3,23 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 
-const seasons = [
-  "Season-1",
-  "Season-2",
-  "Season-3",
-  "Season-4",
-  "Season-5",
-  "Season-6",
-  "Season-7",
-  "Season-8",
-  "Season-9",
-  "Season-10",
-  "Season-11",
-];
+const seasons = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
 export const SeasonAll = (props) => {
   const [showSelectSeason, setShowSelectSeason] = useState(false);
-  const [posts, setPosts] = useState([]);
-  const [type, setType] = useState("Season-3");
+  const [films, setFilms] = useState([]);
+  const [type, setType] = useState("1");
 
   const handleSelect = () => {
     setShowSelectSeason(!showSelectSeason);
@@ -31,17 +19,20 @@ export const SeasonAll = (props) => {
   };
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/${type}`).then((res) => {
-      setPosts(res.data.hub.items);
-    });
+    axios
+      .get(`https://6303b2bc0de3cd918b3c60e9.mockapi.io/series/Season-/${type}`)
+      .then((res) => {
+        setFilms(res.data.items);
+      });
   }, [type]);
+
   // //////
   return (
     <div>
       {/* btn season */}
       <div onClick={handleSelect} className="relative w-[280px]">
-        <button className="z-50 mb-[50px] w-[280px] px-5 flex justify-between items-center h-[48px] bg-[#272C34] text-white text-[15px] rounded-md hover:bg-[#444548]">
-          {type}
+        <button className="z-50 mb-[50px] w-[280px] px-5 flex justify-between items-center h-[48px] bg-[#272C34] text-white text-[15px] rounded-md hover:bg-[#444548] duration-200">
+          {`Season ${type}`}
           <span className="ml-10">
             <FontAwesomeIcon icon={faChevronDown} />
           </span>
@@ -60,23 +51,22 @@ export const SeasonAll = (props) => {
                       display: "",
                     }}
                   >
-                    {season}
+                    {`Season ${season}`}
                   </button>
                 </li>
               </ul>
             ))}
         </div>
       </div>
-
       {/* render */}
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 sm:gap-x-5 lg:gap-x-6 gap-y-10 lg:gap-y-[60px]">
-        {posts.map((film) => (
-          <div key={film.id}>
+        {films.map((film) => (
+          <div key={film.number}>
             <div className="">
               <div className="relative">
                 <img
                   className="z-10 w-full rounded-xl hover:brightness-75"
-                  src={film.artwork.horizontalHero.path}
+                  src={film.path}
                   alt={film.name}
                 />
                 <span
@@ -89,11 +79,11 @@ export const SeasonAll = (props) => {
                 EPISODE {film.number}
               </p>
               {/* film name */}
-              <p className="text-[14px] text-[#0B0C0F] font-bold pb-1">
+              <p className="text-[14px] text-textColorPrimary font-bold pb-1">
                 {film.name}
               </p>
               {/* desc */}
-              <p className="text-[13px] sm:text-[14px] text-[#0B0C0F] tracking-normal md:tracking-wide">
+              <p className="text-[13px] sm:text-[14px] text-textColorPrimary tracking-normal md:tracking-wide">
                 {film.description}
               </p>
             </div>

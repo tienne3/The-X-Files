@@ -34,7 +34,7 @@ function BundleSave(props) {
         {/*  */}
         <div className="flex justify-center">
           <Link
-            className="absolute bottom-10 text-[#176EE1] text-[14px]"
+            className="absolute bottom-10 text-textBlue text-[14px]"
             to={"#"}
           >
             Learn More
@@ -53,7 +53,7 @@ function BundleSave(props) {
               />
             </p>
 
-            <Link className="text-[#176EE1] text-[13px]" to={"#"}>
+            <Link className="text-textBlue text-[13px]" to={"#"}>
               Bundle Terms Apply
             </Link>
           </div>
@@ -61,8 +61,8 @@ function BundleSave(props) {
       </div>
 
       {/* col 2 */}
-      <div className="relative w-[330px] px-[30px] h-[520px] border-t-[4px] border-t-[#29A869] shadow-md bg-white">
-        <button className="text-white bg-[#29A869] rounded-full text-[12px] tracking-wider font-extrabold px-6 py-2 mt-7 mb-3">
+      <div className="relative w-[330px] px-[30px] h-[520px] border-t-[4px] border-t-textGreen shadow-md bg-white">
+        <button className="text-white bg-textGreen rounded-full text-[12px] tracking-wider font-extrabold px-6 py-2 mt-7 mb-3">
           {props.amount2}
         </button>
         {/* title */}
@@ -92,7 +92,7 @@ function BundleSave(props) {
         {/*  */}
         <div className="flex justify-center">
           <Link
-            className="absolute bottom-10 text-[#176EE1] text-[14px]"
+            className="absolute bottom-10 text-textBlue text-[14px]"
             to={"#"}
           >
             Learn More
@@ -101,7 +101,7 @@ function BundleSave(props) {
         {/*  */}
         <div className="flex justify-center">
           <Link
-            className="absolute -bottom-7 text-[#176EE1] text-[13px]"
+            className="absolute -bottom-7 text-textBlue text-[13px]"
             to={"#"}
           >
             Bundle Terms Apply
@@ -138,7 +138,7 @@ function BundleSave(props) {
         {/*  */}
         <div className="flex justify-center">
           <Link
-            className="absolute bottom-10 text-[#176EE1] text-[14px]"
+            className="absolute bottom-10 text-textBlue text-[14px]"
             to={"#"}
           >
             Learn More
@@ -157,7 +157,7 @@ function BundleSave(props) {
               />
             </p>
 
-            <Link className="text-[#176EE1] text-[13px]" to={"#"}>
+            <Link className="text-textBlue text-[13px]" to={"#"}>
               Terms Apply
             </Link>
           </div>

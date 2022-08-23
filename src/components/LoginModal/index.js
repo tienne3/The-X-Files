@@ -59,7 +59,7 @@ function LoginModal(props) {
 
         <Link
           to={"#"}
-          className="text-[#176EE1] text-[14px] font-normal tracking-wider"
+          className="text-textBlue text-[14px] font-normal tracking-wider"
         >
           Forgot your email or password?
         </Link>
@@ -78,7 +78,7 @@ function LoginModal(props) {
         <p className="text-[14px] tracking-wider mt-[45px] md:mt-[60px] lg:mt-[80px] text-center text-[#636E85] font-normal">
           Don't have an account?
           <br />
-          <Link className="text-[#176EE1] ml-1" to={"/register"}>
+          <Link className="text-textBlue ml-1" to={"/register"}>
             Start your free trial
           </Link>
         </p>

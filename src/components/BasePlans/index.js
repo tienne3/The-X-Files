@@ -11,7 +11,7 @@ function BasePlans(props) {
         </p>
 
         {/* offer */}
-        <p className="text-[17px] text-[#29A869] font-semibold mb-2 mt-5">
+        <p className="text-[17px] text-textGreen font-semibold mb-2 mt-5">
           {props.offerCol12}
         </p>
 
@@ -45,8 +45,8 @@ function BasePlans(props) {
       </div>
 
       {/* col 2 */}
-      <div className="relative w-[330px] px-[30px] h-[455px] border-t-[4px] border-t-[#29A869] shadow-md bg-white ">
-        <button className="text-white bg-[#29A869] rounded-full text-[12px] tracking-wider font-extrabold px-6 py-2 mt-7 mb-3">
+      <div className="relative w-[330px] px-[30px] h-[455px] border-t-[4px] border-t-textGreen shadow-md bg-white ">
+        <button className="text-white bg-textGreen rounded-full text-[12px] tracking-wider font-extrabold px-6 py-2 mt-7 mb-3">
           {props.amount}
         </button>
         {/* title */}
@@ -55,7 +55,7 @@ function BasePlans(props) {
         </p>
 
         {/* offer */}
-        <p className="text-[17px] text-[#29A869] font-semibold mb-2 mt-5">
+        <p className="text-[17px] text-textGreen font-semibold mb-2 mt-5">
           {props.offerCol12}
         </p>
 
@@ -79,7 +79,7 @@ function BasePlans(props) {
         <div className="flex justify-center">
           <Link
             to={"#"}
-            className="text-[#176EE1] text-[15px] tracking-wide font-semibold absolute -bottom-20"
+            className="text-textBlue text-[15px] tracking-wide font-semibold absolute -bottom-20"
           >
             Looking for our student discount?
           </Link>
@@ -94,7 +94,7 @@ function BasePlans(props) {
         </p>
 
         {/* offer */}
-        <p className="text-[17px] text-[#29A869] font-semibold mb-2 mt-5">
+        <p className="text-[17px] text-textGreen font-semibold mb-2 mt-5">
           {props.offerCol3}
         </p>
 
@@ -118,7 +118,7 @@ function BasePlans(props) {
         {/*  */}
         <div className="flex justify-center">
           <Link
-            className="absolute bottom-4 text-[#176EE1] text-[14px]"
+            className="absolute bottom-4 text-textBlue text-[14px]"
             to={"#"}
           >
             Learn More
@@ -132,7 +132,7 @@ function BasePlans(props) {
               No free trial available.
             </p>
 
-            <Link className="text-[#176EE1] text-[13px]" to={"#"}>
+            <Link className="text-textBlue text-[13px]" to={"#"}>
               Terms Apply
             </Link>
           </div>

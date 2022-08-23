@@ -94,8 +94,8 @@ function Register() {
         </form>
         <p className="mt-6 md:mt-[35px] mb-[25px] text-[#636E85] text-[12px] tracking-wide">
           By clicking “CONTINUE” you agree to the <br className="sm:hidden" />
-          <span className="text-[#176EE1]">Hulu Terms of Use</span> and{" "}
-          <span className="text-[#176EE1]">Privacy Policy</span>.
+          <span className="text-textBlue">Hulu Terms of Use</span> and{" "}
+          <span className="text-textBlue">Privacy Policy</span>.
         </p>
         <button
           style={
