@@ -19,6 +19,7 @@ export const SeasonAll = (props) => {
     props.onClick();
   };
 
+  // call api
   useEffect(() => {
     axios
       .get(`https://6303b2bc0de3cd918b3c60e9.mockapi.io/series/Season-/${type}`)
@@ -60,14 +61,14 @@ export const SeasonAll = (props) => {
         </div>
       </div>
       {/* render */}
-      <div
-        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 sm:gap-x-5 lg:gap-x-6 gap-y-10 lg:gap-y-[60px]"
-        data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-easing="ease-in-sine"
-      >
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 sm:gap-x-5 lg:gap-x-6 gap-y-10 lg:gap-y-[60px]">
         {films.map((film) => (
-          <div key={film.number}>
+          <div
+            key={film.number}
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
             <div className="">
               <div className="relative">
                 <img
