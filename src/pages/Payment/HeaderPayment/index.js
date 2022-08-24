@@ -22,7 +22,7 @@ function HeaderPayment() {
     return () => {
       document.removeEventListener("keydown", onKeyDown);
     };
-  });
+  }, []);
 
   return (
     <div>

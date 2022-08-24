@@ -16,11 +16,12 @@ function MenuMobile() {
         setModaLogin(false);
       }
     }
+    console.log("re-render");
     document.addEventListener("keydown", onKeyDown);
     return () => {
       document.removeEventListener("keydown", onKeyDown);
     };
-  });
+  }, []);
 
   return (
     <div className="absolute top-[50px] right-5">

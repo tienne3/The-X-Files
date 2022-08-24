@@ -21,7 +21,7 @@ function Extras() {
     return () => {
       document.removeEventListener("keydown", onKeyDown);
     };
-  });
+  }, []);
 
   //
   useEffect(() => {

@@ -19,15 +19,11 @@ function StartWatching(props) {
     return () => {
       document.removeEventListener("keydown", onKeyDown);
     };
-  });
-
-  const handleHide = () => {
-    props.onClick();
-  };
+  }, []);
 
   return (
     <div
-      onClick={handleHide}
+      onClick={props.onClick}
       className="modal text-semibold fixed z-50 top-0 bottom-0 left-0 right-0 bg-black/[50%] "
     >
       <div
@@ -35,7 +31,7 @@ function StartWatching(props) {
         className="relative w-[90%] sm:w-[80%] bg-white md:w-[600px] h-[522px] border border-[#777] z-50 mx-auto my-auto mt-[39px] md:mt-20 shadow-xl py-10 px-5 sm:px-[60px]"
       >
         <div
-          onClick={handleHide}
+          onClick={props.onClick}
           className="absolute cursor-pointer right-0 top-0 opacity-60 leading-[50px] text-[40px] md:text-[45px] font-thin px-5 text-black"
         >
           &times;

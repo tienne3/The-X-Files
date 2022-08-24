@@ -21,11 +21,12 @@ function BackgroundPC() {
         setModaLogin(false);
       }
     }
+
     document.addEventListener("keydown", onKeyDown);
     return () => {
       document.removeEventListener("keydown", onKeyDown);
     };
-  });
+  }, []);
 
   // //////////
   // đóng modal more
