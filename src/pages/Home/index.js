@@ -1,29 +1,16 @@
-import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import VideoIntro from "~/assets/videos";
 import Details from "~/pages/Home/components/Details";
 import Episodes from "./components/Episodes";
 import Extras from "~/pages/Home/components/Extras";
 import SelectYourPlan from "~/components/SelectYourPlan";
 import YouMayLAlsoLike from "~/components/YouMayLAlsoLike";
+import BtnGoToTop from "~/components/BtnGoToTop";
 
 const tabs = ["EPISODES", "EXTRAS", "DETAILS"];
 // this is homepage
 function Home() {
   const [type, setType] = useState("EPISODES");
-  const [showGoToTop, setShowGoToTop] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowGoToTop(window.scrollY >= 1000);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div className="wrapper">
@@ -82,14 +69,7 @@ function Home() {
       </section>
       {/*  */}
       <SelectYourPlan />
-      {showGoToTop && (
-        <button
-          onClick={() => window.scrollTo(0, 0)}
-          className="fixed text-[22px] bottom-10 right-10 bg-primary hover:bg-[#04cd6a] px-3 py-[6px] rounded-xl"
-        >
-          <FontAwesomeIcon icon={faAngleUp} />
-        </button>
-      )}
+      <BtnGoToTop />
     </div>
   );
 }

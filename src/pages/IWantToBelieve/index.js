@@ -3,12 +3,16 @@ import YouMayLAlsoLike from "~/components/YouMayLAlsoLike";
 import { useState } from "react";
 import DetailsIWantToBelieve from "./components/DetailsIWantToBelieve";
 import ItemsIWantToBelieve from "./components/ItemsIWantToBelieve";
+import Footer from "~/Layouts/components/Footer";
+import HeaderIWantToBelieve from "./components/HeaderIWantToBelieve";
+import BtnGoToTop from "~/components/BtnGoToTop";
 
 const tabs = ["YOU MAY ALSO LIKE", "DETAILS"];
 function IWantToBelieve() {
   const [type, setType] = useState("YOU MAY ALSO LIKE");
   return (
     <div>
+      <HeaderIWantToBelieve />
       <section className="mx-5 md:mx-5 lg:mx-10 mt-8 md:mt-0 mb-[50px]">
         <div className="border-b border-b-[#ccc]">
           {tabs.map((tab) => (
@@ -48,6 +52,8 @@ function IWantToBelieve() {
       </section>
       <YouMayLAlsoLike />
       <SelectYourPlan />
+      <BtnGoToTop />
+      <Footer />
     </div>
   );
 }

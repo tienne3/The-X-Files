@@ -1,4 +1,4 @@
-import bg2 from "~/assets/imgs/bg2.jpg";
+import bg02 from "~/assets/imgs/bg02.jpg";
 import { Link } from "react-router-dom";
 import brand from "~/assets/imgs/brand.png";
 import { useEffect, useState } from "react";
@@ -6,8 +6,9 @@ import ModalMore from "~/pages/Home/components/ModalMore";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import MenuMobile from "~/components/MenuMobile";
+import logo2 from "~/assets/imgs/logo2.png";
 
-function BackgroundMobile() {
+function BackgroundMobile2() {
   const [modalMore, setModalMore] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -41,9 +42,9 @@ function BackgroundMobile() {
       <div className="md:hidden">
         <div className="relative overflow-hidden">
           <img
-            className=" object-cover z-10 w-full sm:h-[800px] sm:object-top"
+            className="object-fill z-10 w-full sm:h-[800px] sm:object-cover"
             alt="TheXFiles"
-            src={bg2}
+            src={bg02}
           />
 
           {/* header top */}
@@ -95,14 +96,11 @@ function BackgroundMobile() {
             </div>
           </div>
           {/* header mid */}
-          <div className="mx-5 absolute z-10 bottom-[248px] text-white">
-            <p className="text-[11px] mb-1 font-semibold tracking-wider text-white opacity-70">
-              11 SEASONS AVAILABLE (218 EPISODES)
-            </p>
-            {/* title */}
-            <h1 className="text-[34px]">The X-Files</h1>
+          <div className="px-5 absolute z-10 bottom-[248px] text-white w-full">
+            {/* img */}
+            <img src={logo2} alt="I Want To Believe" />
             {/* desc */}
-            <p className="text-[14px] tracking-wider mt-2">
+            <p className="text-[14px] tracking-wider mt-3">
               The truth is out there. FBI agents Scully and Mulder seek it in
               th... {/* more */}
               <button
@@ -145,7 +143,7 @@ function BackgroundMobile() {
             <div className="mt-4 mb-[5px] w-full flex justify-center">
               <Link
                 to={"/payment"}
-                className="text-[14px] w-full h-[44px] text-center px-6 py-[11px] tracking-wider font-bold rounded bg-white hover:bg-[#ffffffCC] duration-300 text-[#040405]"
+                className=" text-[14px] w-full h-[44px] text-center px-6 py-[11px] tracking-wider font-bold rounded bg-white hover:bg-[#ffffffCC] duration-300 text-[#040405]"
               >
                 START YOUR FREE TRIAL
               </Link>
@@ -156,10 +154,9 @@ function BackgroundMobile() {
           </div>
 
           {/* @@ */}
-          <div className="absolute opacity-30 z-0 w-full top-0 bottom-0 bg-gradient-to-b from-black to-red-600"></div>
-          <div className="absolute opacity-80 z-0 w-full top-0 bottom-0 bg-gradient-to-t from-red-700"></div>
-          <div className="absolute opacity-90 z-0 -left-10 max-w-[1000px] top-0 bottom-0 h-[60px] blur-2xl bg-gradient-to-t from-black to-gray-800"></div>
-          <div className="relative opacity-100 z-0 w-full top-0 h-[220px] bg-gradient-to-t from-red-900 to-black"></div>
+          <div className="absolute opacity-30 z-0 w-full top-0 bottom-0 bg-gradient-to-b from-black to-blue-500"></div>
+          <div className="absolute opacity-60 z-0 w-full top-0 bottom-0 bg-gradient-to-t from-blue-900"></div>
+          <div className="relative opacity-100 z-0 w-full top-0 h-[220px] bg-gradient-to-t from-blue-900 to-black"></div>
 
           {/* header bot */}
           <div className=" absolute opacity-70 w-full bg-gradient-to-t from-black to-black"></div>
@@ -206,4 +203,4 @@ function BackgroundMobile() {
   );
 }
 
-export default BackgroundMobile;
+export default BackgroundMobile2;

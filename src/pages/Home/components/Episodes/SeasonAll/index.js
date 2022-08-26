@@ -64,7 +64,6 @@ function SeasonAll(props) {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 sm:gap-x-5 lg:gap-x-6 gap-y-10 lg:gap-y-[60px]">
         {films.map((film) => (
           <div
-            className=""
             key={film.number}
             data-aos="fade-up"
             data-aos-offset="100"

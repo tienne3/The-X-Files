@@ -3,6 +3,9 @@ import YouMayLAlsoLike from "~/components/YouMayLAlsoLike";
 import { useState } from "react";
 import DetailsFightTheFuture from "./components/DetailsFightTheFuture";
 import ItemsFightTheFuture from "./components/ItemsFightTheFuture";
+import Footer from "~/Layouts/components/Footer";
+import HeaderFightTheFuture from "./components/HeaderIWantToBelieve";
+import BtnGoToTop from "~/components/BtnGoToTop";
 
 const tabs = ["YOU MAY ALSO LIKE", "DETAILS"];
 function FightTheFuture() {
@@ -10,6 +13,7 @@ function FightTheFuture() {
 
   return (
     <div>
+      <HeaderFightTheFuture />
       <section className="mx-5 md:mx-5 lg:mx-10 mt-8 md:mt-0 mb-[50px]">
         <div className="border-b border-b-[#ccc]">
           {tabs.map((tab) => (
@@ -49,6 +53,8 @@ function FightTheFuture() {
       </section>
       <YouMayLAlsoLike />
       <SelectYourPlan />
+      <BtnGoToTop />
+      <Footer />
     </div>
   );
 }

@@ -10,8 +10,8 @@ import IWantToBelieve from "~/pages/IWantToBelieve";
 // Public Routes
 const publicRoutes = [
   { path: "/series-TheX-Files", component: Home },
-  { path: "/fight-the-future", component: FightTheFuture },
-  { path: "/i-want-to-believe", component: IWantToBelieve },
+  { path: "/fight-the-future", component: FightTheFuture, layout: HeaderOnly },
+  { path: "/i-want-to-believe", component: IWantToBelieve, layout: HeaderOnly },
   { path: "/payment", component: Payment, layout: HeaderOnly },
   { path: "/register", component: Register, layout: HeaderOnly },
 ];
