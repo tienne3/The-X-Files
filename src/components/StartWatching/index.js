@@ -28,7 +28,7 @@ function StartWatching(props) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative w-[90%] sm:w-[80%] bg-white md:w-[600px] h-[522px] border border-[#777] z-50 mx-auto my-auto mt-[39px] md:mt-20 shadow-xl py-10 px-5 sm:px-[60px]"
+        className="relative w-[90%] sm:w-[80%] bg-white md:w-[600px] h-[522px] border border-[#777] z-50 mx-auto my-auto mt-[79px] md:mt-[100px] shadow-xl py-10 px-5 sm:px-[60px]"
       >
         <div
           onClick={props.onClick}

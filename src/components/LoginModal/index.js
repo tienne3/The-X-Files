@@ -20,7 +20,7 @@ function LoginModal(props) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative bg-white w-[90%] sm:w-[80%] md:w-[432px] h-[520px] md:h-[560px] lg:h-[600px] z-50 mx-auto my-auto mt-10 lg:mt-[60px] xl:mt-20 shadow-xl py-10 px-6 sm:px-7 md:px-7 lg:px-10"
+        className="relative bg-white w-[90%] sm:w-[80%] md:w-[432px] h-[520px] md:h-[560px] lg:h-[600px] z-50 mx-auto my-auto mt-[80px] md:mt-[100px] lg:mt-[60px] xl:mt-20 shadow-xl py-10 px-6 sm:px-7 md:px-7 lg:px-10"
       >
         <div
           onClick={props.onClick}
