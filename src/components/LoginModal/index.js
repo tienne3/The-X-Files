@@ -63,10 +63,10 @@ function LoginModal(props) {
         <button
           style={
             valueEmail.length > 6 && valuePassword.length > 0
-              ? { opacity: 1 }
+              ? { backgroundColor: "#000" }
               : {}
           }
-          className="text-center text-white bg-[#040405] opacity-60 w-full rounded h-[48px] mt-8"
+          className="text-center text-white bg-[#444] w-full rounded h-[48px] mt-8"
           type={"submit"}
         >
           LOG IN
@@ -82,7 +82,5 @@ function LoginModal(props) {
     </div>
   );
 }
-// style={
-//   type === "Season 1" ? { backgroundColor: "" } : { display: "none" }
-// }
+
 export default LoginModal;

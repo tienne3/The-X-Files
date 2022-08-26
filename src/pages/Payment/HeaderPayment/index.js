@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import LoginModal from "~/components/LoginModal";
-import { useState, useEffect } from "react";
+import { useState, useEffect, memo } from "react";
 
 function HeaderPayment() {
   const [modalLogin, setModaLogin] = useState(false);
@@ -26,6 +26,8 @@ function HeaderPayment() {
 
   return (
     <div>
+      {console.log("re-render")}
+
       <header className="flex items-center justify-between mx-8 h-[60px] border-b border-b-[#f1f1f1]">
         {/* logo hulu */}
         <Link to={"/series-TheX-Files"}>
@@ -66,4 +68,4 @@ function HeaderPayment() {
   );
 }
 
-export default HeaderPayment;
+export default memo(HeaderPayment);

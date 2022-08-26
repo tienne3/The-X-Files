@@ -1,7 +1,7 @@
-import StartWatching from "../StartWatching";
-import { SeasonAll } from "./SeasonAll";
+import SeasonAll from "./SeasonAll";
+import StartWatching from "~/components/StartWatching";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, memo } from "react";
 
 function Episodes() {
   const [modalStartWatching, setModalStartWatching] = useState(false);
@@ -33,4 +33,4 @@ function Episodes() {
   );
 }
 
-export default Episodes;
+export default memo(Episodes);

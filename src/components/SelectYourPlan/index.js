@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import { Link } from "react-router-dom";
 
 const tabs = ["BASE PLANS", "BUNDLE / SAVE"];
@@ -6,7 +6,7 @@ function SelectYourPlan() {
   const [type, setType] = useState("BASE PLANS");
 
   return (
-    <div className="mt-10 mb-20">
+    <section className="mt-10 mb-20">
       {/* top */}
       <div className="text-center pb-10">
         {/* title */}
@@ -14,7 +14,7 @@ function SelectYourPlan() {
           Select Your Plan
         </p>
         {/* desc */}
-        <p className="text-[16px] md:text-[17px] lg:text-[18px] mt-2 tracking-wide">
+        <p className="text-[16px] md:text-[17px] lg:text-[18px] mt-2 tracking-wide px-4 mb-2 md:mb-0">
           No hidden fees, equipment rentals, or installation appointments.
         </p>
         <p className="text-[16px] md:text-[17px] lg:text-[18px] font-bold tracking-wide">
@@ -685,8 +685,8 @@ function SelectYourPlan() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
-export default SelectYourPlan;
+export default memo(SelectYourPlan);

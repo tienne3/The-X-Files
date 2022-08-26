@@ -5,10 +5,11 @@ function DefaultLayout({ children }) {
   return (
     <div>
       <Header />
+      {/* content */}
       <div className="container w-full max-w-[1600px]">
         <div className="content">{children}</div>
       </div>
-      <div className="text-center">
+      <div>
         <Footer />
       </div>
     </div>

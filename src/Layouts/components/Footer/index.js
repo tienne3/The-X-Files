@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="bg-[#e8eaed] max-w-[1600px] mx-auto">
+    <div className="bg-[#e8eaed] max-w-[1600px] mx-auto text-center">
       {/* footer top */}
       <div className="px-8 md:px-[60px] lg:px-[60px] xl:px-[140px] py-5 sm:py-8 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 md:gap-x-2 xl:gap-x-4  md:gap-y-8 text-start text-textFooter">
         {/* col 1 */}
@@ -99,15 +99,12 @@ function Footer() {
           <Link to={"#"}>TV Parental Guidelines</Link>
         </div>
         <div className="mb-5 text-[14px]">
-          <p>
+          <div>
             Design by
-            <a
-              className="hover:text-red-600 ml-1 font-semibold"
-              href="https://www.facebook.com/profile.php?id=100018525579102"
-            >
+            <p className="hover:text-red-600 ml-1 font-semibold hover:cursor-pointer">
               VM-Tiến
-            </a>
-          </p>
+            </p>
+          </div>
         </div>
       </div>
     </div>

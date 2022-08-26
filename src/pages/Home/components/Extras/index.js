@@ -1,5 +1,5 @@
-import StartWatching from "../StartWatching";
-import { useState, useEffect } from "react";
+import StartWatching from "~/components/StartWatching";
+import { useState, useEffect, memo } from "react";
 import axios from "axios";
 
 function Extras() {
@@ -61,4 +61,4 @@ function Extras() {
   );
 }
 
-export default Extras;
+export default memo(Extras);

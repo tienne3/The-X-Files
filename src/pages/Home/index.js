@@ -1,10 +1,12 @@
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from "react";
-import Details from "~/components/Details";
-import Episodes from "~/components/Episodes";
-import Extras from "~/components/Extras";
+import VideoIntro from "~/assets/videos";
+import Details from "~/pages/Home/components/Details";
+import Episodes from "./components/Episodes";
+import Extras from "~/pages/Home/components/Extras";
 import SelectYourPlan from "~/components/SelectYourPlan";
+import YouMayLAlsoLike from "~/components/YouMayLAlsoLike";
 
 const tabs = ["EPISODES", "EXTRAS", "DETAILS"];
 // this is homepage
@@ -25,17 +27,8 @@ function Home() {
 
   return (
     <div className="wrapper">
-      <div className="flex justify-center px-2 mx-auto mt-5 md:mt-0 mb-0 md:mb-5 ">
-        <iframe
-          className="aspect-video w-full h-full sm:w-[560px] sm:h-[315px]"
-          src="https://www.youtube.com/embed/Vpqffgak7To"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-      <div className="mx-5 md:mx-5 lg:mx-10 mt-8 md:mt-0 mb-[50px]">
+      <VideoIntro />
+      <section className="mx-5 md:mx-5 lg:mx-10 mt-8 md:mt-0 mb-[50px]">
         {/* button tabs */}
         <div className="border-b border-b-[#ccc]">
           {tabs.map((tab) => (
@@ -81,7 +74,13 @@ function Home() {
         >
           <Details />
         </div>
-      </div>
+      </section>
+
+      {/* YOU MAY ALSO LIKE */}
+      <section>
+        <YouMayLAlsoLike />
+      </section>
+      {/*  */}
       <SelectYourPlan />
       {showGoToTop && (
         <button

@@ -106,7 +106,7 @@ function Register() {
               ? { backgroundColor: "#040405" }
               : {}
           }
-          className="text-[#b9bfc8] bg-[#272C3580] font-bold tracking-widest w-[90%] sm:w-[400px] h-[48px] rounded text-[14px]"
+          className="text-[#b9bfc8] bg-[#444] font-bold tracking-widest w-[90%] sm:w-[400px] h-[48px] rounded text-[14px]"
         >
           CONTINUE
         </button>

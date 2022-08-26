@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import bg3 from "~/assets/imgs/bg3.jpg";
 import brand from "~/assets/imgs/brand.png";
 import LoginModal from "~/components/LoginModal";
-import ModalMore from "~/components/ModalMore";
+import ModalMore from "~/pages/Home/components/ModalMore";
 
 function BackgroundPC() {
   const [modalLogin, setModaLogin] = useState(false);
@@ -13,6 +13,7 @@ function BackgroundPC() {
   const handleLoginModal = () => {
     setModaLogin(!modalLogin);
   };
+
   // đóng login modal
   useEffect(() => {
     function onKeyDown(e) {

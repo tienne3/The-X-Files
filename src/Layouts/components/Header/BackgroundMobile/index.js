@@ -2,7 +2,7 @@ import bg2 from "~/assets/imgs/bg2.jpg";
 import { Link } from "react-router-dom";
 import brand from "~/assets/imgs/brand.png";
 import { useEffect, useState } from "react";
-import ModalMore from "~/components/ModalMore";
+import ModalMore from "~/pages/Home/components/ModalMore";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import MenuMobile from "~/components/MenuMobile";

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import icon1 from "~/assets/imgs/icon1.png";
+import { memo } from "react";
 
 function FooterPayment() {
   return (
@@ -31,4 +32,4 @@ function FooterPayment() {
   );
 }
 
-export default FooterPayment;
+export default memo(FooterPayment);

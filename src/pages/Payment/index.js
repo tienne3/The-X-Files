@@ -1,6 +1,6 @@
 import { useState } from "react";
-import BasePlans from "~/components/BasePlans";
-import BundleSave from "~/components/BundleSave";
+import BasePlans from "~/pages/Payment/BasePlans";
+import BundleSave from "~/pages/Payment/BundleSave";
 import HeaderPayment from "./HeaderPayment";
 import FooterPayment from "./FooterPayment";
 

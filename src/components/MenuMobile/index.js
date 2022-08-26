@@ -16,7 +16,6 @@ function MenuMobile() {
         setModaLogin(false);
       }
     }
-    console.log("re-render");
     document.addEventListener("keydown", onKeyDown);
     return () => {
       document.removeEventListener("keydown", onKeyDown);
