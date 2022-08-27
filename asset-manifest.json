@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/series-TheX-Files/static/css/main.40687f0a.css",
-    "main.js": "/series-TheX-Files/static/js/main.93880b3a.js",
+    "main.js": "/series-TheX-Files/static/js/main.1e97f357.js",
     "static/js/787.e636e80e.chunk.js": "/series-TheX-Files/static/js/787.e636e80e.chunk.js",
     "static/media/bg3.jpg": "/series-TheX-Files/static/media/bg3.763bd55248c5555b6d7a.jpg",
     "static/media/bg2.jpg": "/series-TheX-Files/static/media/bg2.6d2b7855ea73d56fc47c.jpg",
@@ -12,11 +12,11 @@
     "static/media/bg02.jpg": "/series-TheX-Files/static/media/bg02.12a0a09c9cfd4a66f6d2.jpg",
     "index.html": "/series-TheX-Files/index.html",
     "main.40687f0a.css.map": "/series-TheX-Files/static/css/main.40687f0a.css.map",
-    "main.93880b3a.js.map": "/series-TheX-Files/static/js/main.93880b3a.js.map",
+    "main.1e97f357.js.map": "/series-TheX-Files/static/js/main.1e97f357.js.map",
     "787.e636e80e.chunk.js.map": "/series-TheX-Files/static/js/787.e636e80e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.40687f0a.css",
-    "static/js/main.93880b3a.js"
+    "static/js/main.1e97f357.js"
   ]
 }
