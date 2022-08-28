@@ -48,11 +48,11 @@ function YouMayLAlsoLike() {
                 <span className="absolute z-0 border-[4px] -top-[7px] -bottom-[7px] -left-[7px] -right-[7px] rounded-[16px] border-[#888] bg-[#000]/[20%] opacity-0 group-hover:opacity-100 duration-300"></span>
               </div>
               {/* name */}
-              <p className="text-[13px] md:text-[14px] mt-2 md:mt-3 ">
+              <p className="text-[13px] md:text-[14px] mt-2 md:mt-3 font-bold">
                 {film.name}
               </p>
               {/* desciption */}
-              <p className="text-[14px] text-textColorPrimary font-bold md:tracking-wide mt-2 md:mt-2">
+              <p className="text-[14px] text-textColorPrimary md:tracking-wide mt-2 md:mt-2">
                 {film.description}
               </p>
             </Link>
