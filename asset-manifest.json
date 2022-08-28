@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/series-TheX-Files/static/css/main.152770e2.css",
-    "main.js": "/series-TheX-Files/static/js/main.c8bd7e56.js",
+    "main.css": "/series-TheX-Files/static/css/main.c73798c1.css",
+    "main.js": "/series-TheX-Files/static/js/main.b2da82b3.js",
     "static/js/787.e636e80e.chunk.js": "/series-TheX-Files/static/js/787.e636e80e.chunk.js",
     "static/media/bg3.jpg": "/series-TheX-Files/static/media/bg3.763bd55248c5555b6d7a.jpg",
     "static/media/bg2.jpg": "/series-TheX-Files/static/media/bg2.6d2b7855ea73d56fc47c.jpg",
@@ -11,12 +11,12 @@
     "static/media/brand.png": "/series-TheX-Files/static/media/brand.322e3f98b6a13eb39cd6.png",
     "static/media/bg02.jpg": "/series-TheX-Files/static/media/bg02.12a0a09c9cfd4a66f6d2.jpg",
     "index.html": "/series-TheX-Files/index.html",
-    "main.152770e2.css.map": "/series-TheX-Files/static/css/main.152770e2.css.map",
-    "main.c8bd7e56.js.map": "/series-TheX-Files/static/js/main.c8bd7e56.js.map",
+    "main.c73798c1.css.map": "/series-TheX-Files/static/css/main.c73798c1.css.map",
+    "main.b2da82b3.js.map": "/series-TheX-Files/static/js/main.b2da82b3.js.map",
     "787.e636e80e.chunk.js.map": "/series-TheX-Files/static/js/787.e636e80e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.152770e2.css",
-    "static/js/main.c8bd7e56.js"
+    "static/css/main.c73798c1.css",
+    "static/js/main.b2da82b3.js"
   ]
 }
