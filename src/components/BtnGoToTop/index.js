@@ -15,16 +15,16 @@ function BtnGoToTop() {
     };
   }, []);
   return (
-    <div>
+    <>
       {showGoToTop && (
         <button
           onClick={() => window.scrollTo(0, 0)}
-          className="fixed text-[22px] bottom-10 right-10 bg-primary hover:bg-[#04cd6a] px-3 py-[6px] rounded-xl"
+          className="fixed text-[22px] bottom-10 right-10 bg-primary hover:bg-[#04cd6a] px-[10px] py-[3px] rounded-md"
         >
           <FontAwesomeIcon icon={faAngleUp} />
         </button>
       )}
-    </div>
+    </>
   );
 }
 

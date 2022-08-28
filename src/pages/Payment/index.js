@@ -1,8 +1,8 @@
 import { useState } from "react";
-import BasePlans from "~/pages/Payment/BasePlans";
-import BundleSave from "~/pages/Payment/BundleSave";
-import HeaderPayment from "./HeaderPayment";
-import FooterPayment from "./FooterPayment";
+import BasePlans from "~/pages/Payment/components/BasePlans";
+import BundleSave from "~/pages/Payment/components/BundleSave";
+import HeaderPayment from "./components/HeaderPayment";
+import FooterPayment from "./components/FooterPayment";
 
 const tabs = ["BASE PLANS", "BUNDLE / SAVE"];
 function Payment() {

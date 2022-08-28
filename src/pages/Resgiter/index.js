@@ -1,5 +1,5 @@
-import FooterPayment from "../Payment/FooterPayment";
-import HeaderPayment from "../Payment/HeaderPayment";
+import FooterPayment from "../Payment/components/FooterPayment";
+import HeaderPayment from "../Payment/components/HeaderPayment";
 import { useState } from "react";
 
 function Register() {

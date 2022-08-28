@@ -99,12 +99,12 @@ function Footer() {
           <Link to={"#"}>TV Parental Guidelines</Link>
         </div>
         <div className="mb-5 text-[14px]">
-          <div>
+          <p>
             Design by
-            <p className="hover:text-red-600 ml-1 font-semibold hover:cursor-pointer">
+            <span className="hover:text-red-600 ml-1 font-semibold hover:cursor-pointer">
               VM-Tiến
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
       </div>
     </div>
