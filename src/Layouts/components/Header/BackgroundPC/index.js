@@ -4,23 +4,36 @@ import LogoSvg from "~/assets/Icons/LogoSvg";
 import bg3 from "~/assets/imgs/bg3.jpg";
 import brand from "~/assets/imgs/brand.png";
 import LoginModal from "~/components/LoginModal";
+import ModalDetails from "~/pages/Home/components/ModalDetails";
 import ModalMore from "~/pages/Home/components/ModalMore";
 
 function BackgroundPC() {
   const [modalLogin, setModaLogin] = useState(false);
   const [modalMore, setModalMore] = useState(false);
+  const [modalDetails, setModalDetails] = useState(false);
 
   // đóng, mở login modal
   const handleLoginModal = () => {
     setModaLogin(!modalLogin);
   };
 
-  // đóng login modal
+  // đóng, mở more modal
+  const handleModalMore = () => {
+    setModalMore(!modalMore);
+  };
+
+  // đóng, mở details modal
+  const handleModalDetails = () => {
+    setModalDetails(!modalDetails);
+  };
+
+  // đóng login modal, more, deatils
   useEffect(() => {
     function onKeyDown(e) {
       if (e.keyCode === 27) {
         setModalMore(false);
         setModaLogin(false);
+        setModalDetails(false);
       }
     }
 
@@ -29,12 +42,6 @@ function BackgroundPC() {
       document.removeEventListener("keydown", onKeyDown);
     };
   }, []);
-
-  // //////////
-  // đóng modal more
-  const handleModalMore = () => {
-    setModalMore(!modalMore);
-  };
 
   return (
     <div className="sm:block">
@@ -47,7 +54,7 @@ function BackgroundPC() {
         />
 
         {/* header top */}
-        <div className="w-full absolute z-50 top-[54px] ">
+        <div className="w-full absolute z-20 top-[54px] ">
           <div className="flex items-center justify-between mx-10">
             {/* logo hulu */}
             <Link to={"/series-TheX-Files"}>
@@ -130,7 +137,7 @@ function BackgroundPC() {
                 START YOUR FREE TRIAL
               </Link>
             </div>
-            <p className="opacity-70 text-[10px] font-normal tracking-wider text-white ">
+            <p className="opacity-70 text-[11px] font-normal tracking-wider text-white ">
               New subscribers only.
             </p>
           </div>
@@ -138,7 +145,7 @@ function BackgroundPC() {
 
         {/* bg-gradient */}
         <div className=" absolute w-full top-0 min-h-[720px] bg-gradient-to-r from-red-700"></div>
-        <div className=" absolute opacity-20 w-full top-0 min-h-[720px] bg-gradient-to-r from-red-700 to-red-300"></div>
+        <div className=" absolute opacity-10 w-full top-0 min-h-[720px] bg-gradient-to-r from-red-700 to-red-700"></div>
         <div className=" absolute opacity-5 w-full top-0 min-h-[720px] bg-gradient-to-r from-black to-black"></div>
         <div className=" absolute opacity-90 -left-10 min-w-[2000px] top-0 h-[120px] blur-2xl bg-gradient-to-t from-black to-gray-800"></div>
 
@@ -160,12 +167,19 @@ function BackgroundPC() {
                 <p className="font-normal md:text-[18px] lg:text-[24px] mt-[3px] tracking-wide">
                   Get Hulu, Disney+, and ESPN+.
                 </p>
-                <Link
-                  to={"#"}
-                  className="opacity-70 pt-[5px] text-[14px] underline"
+                {/* modal details */}
+                <button
+                  onClick={setModalDetails}
+                  className="opacity-70 pt-[5px] text-[14px] underline text-start w-[48px]"
                 >
                   Details
-                </Link>
+                </button>
+                <div>
+                  {modalDetails && (
+                    <ModalDetails onClick={handleModalDetails} />
+                  )}
+                </div>
+                {/*  */}
               </div>
             </div>
             {/*  */}
@@ -177,8 +191,8 @@ function BackgroundPC() {
               </Link>
               <br />
               <Link
-                to={"#"}
-                className="flex justify-center text-center opacity-70 pt-[5px] text-[11px] underline"
+                to={"/terms-apply"}
+                className="flex justify-center text-center opacity-70 pt-[5px] text-[12px] underline"
               >
                 Terms apply
               </Link>

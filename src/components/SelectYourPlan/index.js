@@ -2,8 +2,8 @@ import { memo, useState } from "react";
 import { Link } from "react-router-dom";
 import LogoSvg from "~/assets/Icons/LogoSvg";
 
-const tabs = ["BASE PLANS", "BUNDLE / SAVE"];
 function SelectYourPlan() {
+  const tabs = ["BASE PLANS", "BUNDLE / SAVE"];
   const [type, setType] = useState("BASE PLANS");
 
   return (
@@ -11,7 +11,7 @@ function SelectYourPlan() {
       {/* top */}
       <div className="text-center pb-10">
         {/* title */}
-        <p className="text-[#272c34] text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] font-bold">
+        <p className="text-textGray text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] font-bold">
           Select Your Plan
         </p>
         {/* desc */}
@@ -78,7 +78,7 @@ function SelectYourPlan() {
               <p className="text-[#888888] text-[14px] font-semibold tracking-wider mt-4 mb-[3px]">
                 30 DAY FREE TRIAL
               </p>
-              <p className="text-[#272c34] font-bold text-[14px] sm:text-[16px] md:text-[18px]">
+              <p className="text-textGray font-bold text-[14px] sm:text-[16px] md:text-[18px]">
                 Hulu
               </p>
               <Link to={"/register"}>
@@ -99,7 +99,7 @@ function SelectYourPlan() {
               <p className="text-[#888888] text-[14px] font-semibold tracking-wider mt-4 mb-[3px]">
                 30 DAY FREE TRIAL
               </p>
-              <p className="text-[#272c34] font-bold text-[14px] sm:text-[16px] md:text-[18px]">
+              <p className="text-textGray font-bold text-[14px] sm:text-[16px] md:text-[18px]">
                 Hulu
               </p>
               <Link to={"/register"}>
@@ -131,7 +131,7 @@ function SelectYourPlan() {
                   alt="logo"
                 />
               </div>
-              <p className="text-[#272c34] font-bold text-[14px] sm:text-[16px] lg:text-[18px]">
+              <p className="text-textGray font-bold text-[14px] sm:text-[16px] lg:text-[18px]">
                 Hulu
               </p>
               <Link to={"/register"}>
@@ -157,7 +157,7 @@ function SelectYourPlan() {
                   alt="logo"
                 />
               </div>
-              <p className="text-[#272c34] font-bold text-[14px] sm:text-[16px] lg:text-[18px]">
+              <p className="text-textGray font-bold text-[14px] sm:text-[16px] lg:text-[18px]">
                 Hulu (No Ads)
               </p>
               <Link to={"/register"}>
@@ -183,7 +183,7 @@ function SelectYourPlan() {
                   alt="logo"
                 />
               </div>
-              <p className="text-[#272c34] font-bold text-[14px] sm:text-[16px] lg:text-[18px]">
+              <p className="text-textGray font-bold text-[14px] sm:text-[16px] lg:text-[18px]">
                 Hulu + LIVE TV
               </p>
               <Link to={"/register"}>
@@ -205,7 +205,7 @@ function SelectYourPlan() {
       >
         {/* desc, check mobile */}
         <div className="md:w-full lg:w-[400px] text-[14px]">
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             Monthly price
             <div className="flex justify-around text-[14px] mt-2 pb-1 md:hidden">
               <img
@@ -218,7 +218,7 @@ function SelectYourPlan() {
               />
             </div>
           </div>
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             Up to 6 user profiles
             <div className="flex justify-around text-[14px] mt-2 pb-1 md:hidden">
               <img
@@ -231,7 +231,7 @@ function SelectYourPlan() {
               />
             </div>
           </div>
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             Most new episodes the day after they air^
             <div className="flex justify-around text-[14px] mt-2 pb-1 md:hidden">
               <img
@@ -244,7 +244,7 @@ function SelectYourPlan() {
               />
             </div>
           </div>
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             Access to award-winning Hulu Originals
             <div className="flex justify-around text-[14px] mt-2 pb-1 md:hidden">
               <img
@@ -257,7 +257,7 @@ function SelectYourPlan() {
               />
             </div>
           </div>
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             Watch on your TV, laptop, phone, or tablet
             <div className="flex justify-around text-[14px] mt-2 pb-1 md:hidden">
               <img
@@ -270,7 +270,7 @@ function SelectYourPlan() {
               />
             </div>
           </div>
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             No ads in streaming library
             <div className="flex justify-around text-[14px] mt-2 pb-1 md:hidden">
               <div className="flex justify-center text-[14px]">
@@ -282,7 +282,7 @@ function SelectYourPlan() {
               />
             </div>
           </div>
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             Download and watch
             <div className="flex justify-around text-[14px] mt-2 pb-1 md:hidden">
               <div className="flex justify-center text-[14px]">
@@ -406,7 +406,7 @@ function SelectYourPlan() {
       >
         {/* desc, check mobile */}
         <div className="md:w-full lg:w-[400px] text-[14px]">
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             Monthly price. Save up to $7.98 / month*
             <div className="flex justify-between mx-6 text-[14px] mt-2 pb-1 md:hidden">
               <img
@@ -423,7 +423,7 @@ function SelectYourPlan() {
               />
             </div>
           </div>
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             Most new episodes the day after they air^
             <div className="flex justify-between mx-6 text-[14px] mt-2 pb-1 md:hidden">
               <img
@@ -440,7 +440,7 @@ function SelectYourPlan() {
               />
             </div>
           </div>
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             Access to award-winning Hulu Originals
             <div className="flex justify-between mx-6 text-[14px] mt-2 pb-1 md:hidden">
               <img
@@ -457,7 +457,7 @@ function SelectYourPlan() {
               />
             </div>
           </div>
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             Watch on your TV, laptop, phone, or tablet
             <div className="flex justify-between mx-6 text-[14px] mt-2 pb-1 md:hidden">
               <img
@@ -474,7 +474,7 @@ function SelectYourPlan() {
               />
             </div>
           </div>
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             No ads in Hulu streaming library
             <div className="flex justify-between mx-6 text-[14px] mt-2 pb-1 md:hidden">
               <div className="flex justify-center text-[14px]">
@@ -490,7 +490,7 @@ function SelectYourPlan() {
               />
             </div>
           </div>
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             Live TV with 75+ top channels. No cable required.
             <div className="flex justify-between mx-6 text-[14px] mt-2 pb-1 md:hidden">
               <div className="flex justify-center text-[14px]">
@@ -505,7 +505,7 @@ function SelectYourPlan() {
               />
             </div>
           </div>
-          <div className="text-center md:text-start text-[#272c34] py-[10px] md:py-5 px-0 border-b border-[#ddd]">
+          <div className="text-center md:text-start text-textGray py-[10px] md:py-5 px-0 border-b border-[#ddd]">
             Record Live TV with Unlimited DVR
             <div className="flex justify-between mx-6 text-[14px] mt-2 pb-1 md:hidden">
               <div className="flex justify-center text-[14px]">
@@ -650,7 +650,7 @@ function SelectYourPlan() {
         </div>
       </div>
       {/* last */}
-      <div className="max-w-[976px] mx-auto text-[12px] text-[#272c34] text-center leading-[18px]">
+      <div className="max-w-[976px] mx-auto text-[12px] text-textGray text-center leading-[18px]">
         <div className="mx-5">
           <p>^For current-season shows in the streaming library only</p>
           <p>

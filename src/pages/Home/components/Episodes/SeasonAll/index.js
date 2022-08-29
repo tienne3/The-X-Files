@@ -2,10 +2,15 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
-import { AOS } from "aos";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const seasons = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
 function SeasonAll(props) {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const [showSelectSeason, setShowSelectSeason] = useState(false);
   const [films, setFilms] = useState([]);
   const [type, setType] = useState("1");

@@ -7,7 +7,7 @@ function Details() {
         About this Show
       </p>
       <p className="text-textColorPrimary text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold">
-        Fight The Future
+        The X-Files
       </p>
       <p className="text-[#6E7A91] text-[14px] sm:text-[15px] md:text-[16px] mb-5 mt-2">
         The truth is out there. FBI agents Scully and Mulder seek it in this

@@ -6,22 +6,35 @@ import LoginModal from "~/components/LoginModal";
 import ModalMore from "~/pages/Home/components/ModalMore";
 import logo2 from "~/assets/imgs/logo2.png";
 import LogoSvg from "~/assets/Icons/LogoSvg";
+import ModalDetails from "~/pages/Home/components/ModalDetails";
 
 function BackgroundPC3() {
   const [modalLogin, setModaLogin] = useState(false);
   const [modalMore, setModalMore] = useState(false);
+  const [modalDetails, setModalDetails] = useState(false);
 
   // đóng, mở login modal
   const handleLoginModal = () => {
     setModaLogin(!modalLogin);
   };
 
-  // đóng login modal
+  // đóng, mở more modal
+  const handleModalMore = () => {
+    setModalMore(!modalMore);
+  };
+
+  // đóng, mở details modal
+  const handleModalDetails = () => {
+    setModalDetails(!modalDetails);
+  };
+
+  // đóng login modal, more, deatils
   useEffect(() => {
     function onKeyDown(e) {
       if (e.keyCode === 27) {
         setModalMore(false);
         setModaLogin(false);
+        setModalDetails(false);
       }
     }
 
@@ -30,12 +43,6 @@ function BackgroundPC3() {
       document.removeEventListener("keydown", onKeyDown);
     };
   }, []);
-
-  // //////////
-  // đóng modal more
-  const handleModalMore = () => {
-    setModalMore(!modalMore);
-  };
 
   return (
     <div className="sm:block">
@@ -126,7 +133,7 @@ function BackgroundPC3() {
                 START YOUR FREE TRIAL
               </Link>
             </div>
-            <p className="opacity-70 text-[10px] font-normal tracking-wider text-white ">
+            <p className="opacity-70 text-[11px] font-normal tracking-wider text-white ">
               New subscribers only.
             </p>
           </div>
@@ -155,12 +162,19 @@ function BackgroundPC3() {
                 <p className="font-normal md:text-[18px] lg:text-[24px] mt-[3px] tracking-wide">
                   Get Hulu, Disney+, and ESPN+.
                 </p>
-                <Link
-                  to={"#"}
-                  className="opacity-70 pt-[5px] text-[14px] underline"
+                {/* modal details */}
+                <button
+                  onClick={setModalDetails}
+                  className="opacity-70 pt-[5px] text-[14px] underline text-start w-[48px]"
                 >
                   Details
-                </Link>
+                </button>
+                <div>
+                  {modalDetails && (
+                    <ModalDetails onClick={handleModalDetails} />
+                  )}
+                </div>
+                {/*  */}
               </div>
             </div>
             {/*  */}
@@ -172,10 +186,10 @@ function BackgroundPC3() {
               </Link>
               <br />
               <Link
-                to={"#"}
-                className="flex justify-center text-center opacity-70 pt-[5px] text-[11px] underline"
+                to={"/terms-apply"}
+                className="flex justify-center text-center opacity-70 pt-[5px] text-[12px] underline"
               >
-                Terms applyaaa
+                Terms apply
               </Link>
             </div>
           </div>

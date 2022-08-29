@@ -1,8 +1,14 @@
 import StartWatching from "~/components/StartWatching";
 import { useState, useEffect, memo } from "react";
 import axios from "axios";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Extras() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const [modalStartWatching, setModalStartWatching] = useState(false);
   const [films, setFilms] = useState([]);
 
@@ -35,7 +41,12 @@ function Extras() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 sm:gap-x-5 lg:gap-x-6 gap-y-10 lg:gap-y-[60px] mt-10">
       {films.map((film) => (
-        <div key={film.id}>
+        <div
+          key={film.id}
+          data-aos="fade-up"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
+        >
           <div className="relative">
             <img
               className="z-10 w-full rounded-xl hover:brightness-75"

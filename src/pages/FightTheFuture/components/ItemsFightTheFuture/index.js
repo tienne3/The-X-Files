@@ -1,9 +1,14 @@
 import StartWatching from "~/components/StartWatching";
 import { useState, useEffect, memo } from "react";
 import axios from "axios";
-import { AOS } from "aos";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ItemsFightTheFuture() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const [modalStartWatching, setModalStartWatching] = useState(false);
   const [films, setFilms] = useState([]);
 

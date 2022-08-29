@@ -6,6 +6,7 @@ import Payment from "~/pages/Payment";
 import Register from "~/pages/Resgiter";
 import FightTheFuture from "~/pages/FightTheFuture";
 import IWantToBelieve from "~/pages/IWantToBelieve";
+import TermsApply from "~/pages/TermsApply";
 
 // Public Routes
 const publicRoutes = [
@@ -14,6 +15,7 @@ const publicRoutes = [
   { path: "/i-want-to-believe", component: IWantToBelieve, layout: HeaderOnly },
   { path: "/payment", component: Payment, layout: HeaderOnly },
   { path: "/register", component: Register, layout: HeaderOnly },
+  { path: "/terms-apply", component: TermsApply, layout: HeaderOnly },
 ];
 
 const privateRoutes = [];

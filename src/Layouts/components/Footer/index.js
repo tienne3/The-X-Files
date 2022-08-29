@@ -87,7 +87,7 @@ function Footer() {
 
         {/* footer last */}
         <div className="flex flex-wrap gap-x-10 xl:gap-x-0 leading-7 md:leading-10 items-center justify-between mt-10  text-textFooter text-[13px]">
-          <p className="">© 2022 Hulu, LLC</p>
+          <p>© 2022 Hulu, LLC</p>
           <Link className="flex items-center" to={"#"}>
             <img className="mr-2 max-h-5" src={icon1} alt="icon1" />
             About Ads

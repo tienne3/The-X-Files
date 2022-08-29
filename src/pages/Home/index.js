@@ -64,9 +64,7 @@ function Home() {
       </section>
 
       {/* YOU MAY ALSO LIKE */}
-      <section>
-        <YouMayLAlsoLike />
-      </section>
+      <YouMayLAlsoLike />
       {/*  */}
       <SelectYourPlan />
       <BtnGoToTop />
