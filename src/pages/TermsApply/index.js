@@ -10,7 +10,7 @@ function TermsApply() {
       </div>
       {/* body */}
       <div className="min-h-[1000px] bg-[#f7f7f9] mt-[60px] flex justify-center">
-        <div className="w-full md:w-[768px] mx-auto text-textGray text-[16px] md:text-[17px] pt-10 px-5 md:px-[50px] lg:px-[10px] leading-6 pb-5">
+        <div className="w-full md:w-[768px] mx-auto text-textGray text-[15px] sm:text-[16px] md:text-[17px] pt-10 px-5 md:px-[50px] lg:px-[10px] leading-6 pb-5">
           <h3 className="text-[32px] sm:text-[34px] md:text-[36px] lg:text-[38px] xl:text-[40px] font-bold leading-[50px]">
             Hulu, Disney+, ESPN+ Bundle Terms and Conditions
           </h3>

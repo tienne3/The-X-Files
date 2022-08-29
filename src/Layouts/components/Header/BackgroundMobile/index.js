@@ -82,7 +82,7 @@ function BackgroundMobile() {
             </div>
           </div>
           {/* header mid */}
-          <div className="mx-5 absolute z-10 bottom-[248px] text-white">
+          <div className="px-5 w-full mx-auto absolute z-10 bottom-[248px] text-white">
             <p className="text-[11px] mb-1 font-semibold tracking-wider text-white opacity-70">
               11 SEASONS AVAILABLE (218 EPISODES)
             </p>
