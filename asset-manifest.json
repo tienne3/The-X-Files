@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/series-TheX-Files/static/css/main.16ca2668.css",
-    "main.js": "/series-TheX-Files/static/js/main.197cbc4a.js",
+    "main.css": "/series-TheX-Files/static/css/main.9f0e6dd6.css",
+    "main.js": "/series-TheX-Files/static/js/main.57c2350c.js",
     "static/js/787.e636e80e.chunk.js": "/series-TheX-Files/static/js/787.e636e80e.chunk.js",
     "static/media/bg3.jpg": "/series-TheX-Files/static/media/bg3.763bd55248c5555b6d7a.jpg",
     "static/media/bg2.jpg": "/series-TheX-Files/static/media/bg2.6d2b7855ea73d56fc47c.jpg",
     "static/media/bg01.jpg": "/series-TheX-Files/static/media/bg01.0305b89e7909eb2cf447.jpg",
     "static/media/bg03.jpg": "/series-TheX-Files/static/media/bg03.825ac1967edc3cf6f606.jpg",
+    "static/media/Graphik-Semibold-Web.woff2": "/series-TheX-Files/static/media/Graphik-Semibold-Web.52a5fb2be5ef72e027e1.woff2",
+    "static/media/Graphik-Regular-Web.woff2": "/series-TheX-Files/static/media/Graphik-Regular-Web.2d00cabaeda6710a6297.woff2",
     "static/media/bg04.jpg": "/series-TheX-Files/static/media/bg04.6f27a03cec666de5e9eb.jpg",
     "static/media/brand.png": "/series-TheX-Files/static/media/brand.322e3f98b6a13eb39cd6.png",
+    "static/media/Graphik-Extralight-Web.woff2": "/series-TheX-Files/static/media/Graphik-Extralight-Web.afd22115d1b405e1fe80.woff2",
+    "static/media/Graphik-Bold-Web.woff2": "/series-TheX-Files/static/media/Graphik-Bold-Web.26dcd2763bde2aff01a4.woff2",
+    "static/media/Graphik-Medium-Web.woff2": "/series-TheX-Files/static/media/Graphik-Medium-Web.a7eea06964251cf6cf49.woff2",
+    "static/media/Graphik-Light-Web.woff2": "/series-TheX-Files/static/media/Graphik-Light-Web.06004500783e58e6347a.woff2",
     "static/media/bg02.jpg": "/series-TheX-Files/static/media/bg02.12a0a09c9cfd4a66f6d2.jpg",
     "index.html": "/series-TheX-Files/index.html",
-    "main.16ca2668.css.map": "/series-TheX-Files/static/css/main.16ca2668.css.map",
-    "main.197cbc4a.js.map": "/series-TheX-Files/static/js/main.197cbc4a.js.map",
+    "main.9f0e6dd6.css.map": "/series-TheX-Files/static/css/main.9f0e6dd6.css.map",
+    "main.57c2350c.js.map": "/series-TheX-Files/static/js/main.57c2350c.js.map",
     "787.e636e80e.chunk.js.map": "/series-TheX-Files/static/js/787.e636e80e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16ca2668.css",
-    "static/js/main.197cbc4a.js"
+    "static/css/main.9f0e6dd6.css",
+    "static/js/main.57c2350c.js"
   ]
 }
