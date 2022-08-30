@@ -31,7 +31,6 @@ function HeaderFightTheFuture() {
 
   return (
     <div className="sm:block">
-      {/* background-Tablet, PC */}
       <div className="relative md:-top-[40px] md:min-h-[626px] lg:min-h-[695px] overflow-hidden z-10">
         {/* img mobile */}
         <img
@@ -42,7 +41,7 @@ function HeaderFightTheFuture() {
         {/* img pc */}
         <img
           className="hidden md:block w-full object-cover relative z-0 md:min-h-[466px] lg:min-h-[555px] max-h-[720px]"
-          alt="I Want To Believe"
+          alt="Fight The Future"
           src={bg03}
         />
 
@@ -51,37 +50,41 @@ function HeaderFightTheFuture() {
           <HeaderTop />
         </div>
         {/* header mid */}
-        <div className="px-5 w-full bottom-[248px] absolute z-10 md:mx-5 md:top-[133px] lg:top-[167px] xl:top-[204px] text-white">
+        <div className="leading-[18px] sm:leading-[20px] md:leading-6 px-5 w-full bottom-[248px] absolute z-10 md:mx-5 md:top-[133px] lg:top-[167px] xl:top-[204px] text-white">
           {/* logo */}
-          <img src={logo2} alt="I Want To Believe" />
+          <img
+            className="w-[160px] sm:w-[200px] md:w-[220px] lg:w-[240px] xl:w-[260px]"
+            src={logo2}
+            alt="Fight The Future"
+          />
           {/* desc */}
-          <p className="md:text-[14px] lg:text-[15px] mt-3 mb-2 lg:mb-3">
-            <span className="mr-1 tracking-wider text-[14px]">
+          <p className="text-[13px] sm:text-[14px] lg:text-[15px] mt-3 mb-2 lg:mb-3">
+            <span className="mr-1 tracking-wider text-[13px] sm:text-[14px]">
               FBI agents Mulder and Scully probe events that may prove the
               exis..
             </span>
             <button
               onClick={handleModalMore}
-              className="text-[13px] md:text-[14px] font-semibold"
+              className="text-[13px] sm:text-[14px] font-semibold"
             >
               MORE
             </button>
           </p>
           <div>{modalMore && <ModalMore onClick={handleModalMore} />}</div>
-          <p className="text-[14px] lg:text-[15px]">
+          <p className="text-[13px] sm:text-[14px] lg:text-[15px]">
             <span className=" font-semibold">Starring:</span>{" "}
-            <span className="text-[14px] opacity-90 md:opacity-100">
+            <span className="text-[13px] sm:text-[14px] opacity-90 md:opacity-100">
               David Duchovny, Gillian Anderson, Billy Connolly
             </span>
           </p>
-          <p className="text-[14px] lg:text-[15px] font-semibold mb-2">
+          <p className="text-[13px] sm:text-[14px] lg:text-[15px] font-semibold mb-2">
             Director:
             <span className="mx-2 font-normal">Rob Bowman</span>
           </p>
 
           {/*  */}
           <div className="flex items-center">
-            <p className="text-[14px] lg:text-[15px] font-semibold">
+            <p className="text-[13px] sm:text-[14px] lg:text-[15px] font-semibold">
               PG-13:
               <span className="mx-2 font-normal">
                 Thriller, Science Fiction, Horror, Movie - 1998
@@ -98,7 +101,7 @@ function HeaderFightTheFuture() {
             </div>
           </div>
           {/*  */}
-          <p className="text-[14px] lg:text-[15px] xl:text-[16px] mt-4 font-medium">
+          <p className="text-[13px] sm:text-[14px] lg:text-[15px] xl:text-[16px] mt-4 font-medium">
             Add HBO Max™ to any Hulu plan for an additional $14.99/month.
           </p>
           {/* btn */}

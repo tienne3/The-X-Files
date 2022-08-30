@@ -31,7 +31,6 @@ function HeaderIWantToBelieve() {
 
   return (
     <div className="sm:block">
-      {/* background-Tablet, PC */}
       <div className="relative md:-top-[40px] md:min-h-[626px] lg:min-h-[695px] overflow-hidden z-10">
         {/* img mobile */}
         <img
@@ -52,11 +51,15 @@ function HeaderIWantToBelieve() {
         </div>
 
         {/* header mid */}
-        <div className="px-5 w-full bottom-[248px] absolute z-10 md:mx-5 md:top-[133px] lg:top-[167px] xl:top-[204px] text-white">
+        <div className="leading-[18px] sm:leading-[20px] md:leading-6 px-5 w-full bottom-[248px] absolute z-10 md:mx-5 md:top-[133px] lg:top-[167px] xl:top-[204px] text-white">
           {/* logo */}
-          <img src={logo2} alt="I Want To Believe" />
+          <img
+            className="w-[160px] sm:w-[200px] md:w-[220px] lg:w-[240px] xl:w-[260px]"
+            src={logo2}
+            alt="I Want To Believe"
+          />
           {/* desc */}
-          <p className="md:text-[14px] lg:text-[15px] mt-3 mb-2 lg:mb-3">
+          <p className="text-[13px] sm:text-[14px] lg:text-[15px] mt-3 mb-2 lg:mb-3">
             <span className="mr-1 tracking-wider text-[14px]">
               Mysterious kidnappings in an icy rural town prompts the FBI to
               reunite parano...
@@ -70,17 +73,17 @@ function HeaderIWantToBelieve() {
             </button>
           </p>
           <div>{modalMore && <ModalMore onClick={handleModalMore} />}</div>
-          <p className="text-[14px] lg:text-[15px]">
+          <p className="text-[13px] sm:text-[14px] lg:text-[15px]">
             <span className="font-semibold">Starring:</span> David Duchovny,
             Gillian Anderson, Billy Connolly
           </p>
-          <p className="text-[14px] lg:text-[15px] font-semibold mb-2">
+          <p className="text-[13px] sm:text-[14px] lg:text-[15px] font-semibold mb-2">
             Director:
             <span className="mx-2 font-normal">Chris Carter</span>
           </p>
           {/*  */}
           <div className="flex items-center flex-wrap mr-2">
-            <p className="text-[14px] lg:text-[15px] font-semibold">
+            <p className="text-[13px] sm:text-[14px] lg:text-[15px] font-semibold">
               PG-13:
               <span className="mx-2 font-normal">
                 Thriller, Drama, Mystery, Science Fiction, Movie - 2008
@@ -97,14 +100,14 @@ function HeaderIWantToBelieve() {
             </div>
           </div>
           {/*  */}
-          <p className="text-[14px] lg:text-[15px] xl:text-[16px] mt-4 font-medium">
+          <p className="text-[13px] sm:text-[14px] lg:text-[15px] xl:text-[16px] mt-4 font-medium">
             Add HBO Max™ to any Hulu plan for an additional $14.99/month.
           </p>
           {/* btn */}
           <div className="mt-[10px] mb-2 w-full flex justify-center md:justify-start">
             <Link
               to={"/payment"}
-              className="text-[14px] w-full text-center md:w-[230px] pb-[10px] px-6 py-[9px] tracking-wider font-bold rounded bg-white hover:bg-[#ffffffCC] duration-300 text-[#040405]"
+              className="text-[13px] sm:text-[14px] w-full text-center md:w-[230px] pb-[10px] px-6 py-[9px] tracking-wider font-bold rounded bg-white hover:bg-[#ffffffCC] duration-300 text-[#040405]"
             >
               START YOUR FREE TRIAL
             </Link>
