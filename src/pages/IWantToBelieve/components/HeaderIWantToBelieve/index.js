@@ -86,7 +86,7 @@ function HeaderIWantToBelieve() {
             <p className="text-[13px] sm:text-[14px] lg:text-[15px] font-semibold">
               PG-13:
               <span className="mx-2 font-normal">
-                Thriller, Drama, Mystery, Science Fiction, Movie - 2008
+                Thriller, Drama, Mystery, Science Fiction, Movie 2008
               </span>
             </p>
 
@@ -107,7 +107,7 @@ function HeaderIWantToBelieve() {
           <div className="mt-[10px] mb-2 w-full flex justify-center md:justify-start">
             <Link
               to={"/payment"}
-              className="text-[13px] sm:text-[14px] w-full text-center md:w-[230px] pb-[10px] px-6 py-[9px] tracking-wider font-bold rounded bg-white hover:bg-[#ffffffCC] duration-300 text-[#040405]"
+              className="text-[14px] w-full text-center md:w-[230px] pb-[10px] px-6 py-[9px] tracking-wider font-bold rounded bg-white hover:bg-[#ffffffCC] duration-300 text-[#040405]"
             >
               START YOUR FREE TRIAL
             </Link>

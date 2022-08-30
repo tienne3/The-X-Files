@@ -83,15 +83,15 @@ function HeaderFightTheFuture() {
           </p>
 
           {/*  */}
-          <div className="flex items-center">
+          <div className="flex items-center flex-wrap mr-2">
             <p className="text-[13px] sm:text-[14px] lg:text-[15px] font-semibold">
               PG-13:
               <span className="mx-2 font-normal">
-                Thriller, Science Fiction, Horror, Movie - 1998
+                Thriller, Science Fiction, Horror, Movie 1998
               </span>
             </p>
 
-            <div className="xl:-mt-1 ml-2 flex items-center">
+            <div className="flex items-center mt-2 md:mt-0">
               <button className="px-[6px] bg-white text-black rounded border border-[#ccc] text-[10px] font-bold mr-2">
                 5.1
               </button>
