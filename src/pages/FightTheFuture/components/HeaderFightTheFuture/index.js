@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import bg01 from "~/assets/imgs/bg01.jpg";
-import bg02 from "~/assets/imgs/bg02.jpg";
+import bg03 from "~/assets/imgs/bg03.jpg";
+import bg04 from "~/assets/imgs/bg04.jpg";
 import ModalMore from "~/pages/Home/components/ModalMore";
 import logo2 from "~/assets/imgs/logo2.png";
 import HeaderTop from "~/components/HeaderTop";
 import HeaderBot from "~/components/HeaderBot";
 
-function HeaderIWantToBelieve() {
+function HeaderFightTheFuture() {
   const [modalMore, setModalMore] = useState(false);
 
   // đóng, mở more modal
@@ -37,20 +37,19 @@ function HeaderIWantToBelieve() {
         <img
           className="md:hidden object-fill z-10 w-full sm:h-[800px] sm:object-cover"
           alt="TheXFiles"
-          src={bg02}
+          src={bg04}
         />
-        {/* img PC */}
+        {/* img pc */}
         <img
           className="hidden md:block w-full object-cover relative z-0 md:min-h-[466px] lg:min-h-[555px] max-h-[720px]"
           alt="I Want To Believe"
-          src={bg01}
+          src={bg03}
         />
 
         {/* header top */}
-        <div className="w-full absolute z-20 top-4 md:top-[54px]">
+        <div className="w-full absolute z-20 top-4 md:top-[54px] ">
           <HeaderTop />
         </div>
-
         {/* header mid */}
         <div className="px-5 w-full bottom-[248px] absolute z-10 md:mx-5 md:top-[133px] lg:top-[167px] xl:top-[204px] text-white">
           {/* logo */}
@@ -58,10 +57,9 @@ function HeaderIWantToBelieve() {
           {/* desc */}
           <p className="md:text-[14px] lg:text-[15px] mt-3 mb-2 lg:mb-3">
             <span className="mr-1 tracking-wider text-[14px]">
-              Mysterious kidnappings in an icy rural town prompts the FBI to
-              reunite parano...
-            </span>{" "}
-            {/* more */}
+              FBI agents Mulder and Scully probe events that may prove the
+              exis..
+            </span>
             <button
               onClick={handleModalMore}
               className="text-[13px] md:text-[14px] font-semibold"
@@ -71,27 +69,30 @@ function HeaderIWantToBelieve() {
           </p>
           <div>{modalMore && <ModalMore onClick={handleModalMore} />}</div>
           <p className="text-[14px] lg:text-[15px]">
-            <span className="font-semibold">Starring:</span> David Duchovny,
-            Gillian Anderson, Billy Connolly
+            <span className=" font-semibold">Starring:</span>{" "}
+            <span className="text-[14px] opacity-90 md:opacity-100">
+              David Duchovny, Gillian Anderson, Billy Connolly
+            </span>
           </p>
           <p className="text-[14px] lg:text-[15px] font-semibold mb-2">
             Director:
-            <span className="mx-2 font-normal">Chris Carter</span>
+            <span className="mx-2 font-normal">Rob Bowman</span>
           </p>
+
           {/*  */}
-          <div className="flex items-center flex-wrap mr-2">
+          <div className="flex items-center">
             <p className="text-[14px] lg:text-[15px] font-semibold">
               PG-13:
               <span className="mx-2 font-normal">
-                Thriller, Drama, Mystery, Science Fiction, Movie - 2008
+                Thriller, Science Fiction, Horror, Movie - 1998
               </span>
             </p>
 
-            <div className="flex items-center mt-2 md:mt-0">
-              <button className=" px-[6px] bg-white text-black rounded border border-[#ccc] text-[10px] font-bold mr-2">
+            <div className="xl:-mt-1 ml-2 flex items-center">
+              <button className="px-[6px] bg-white text-black rounded border border-[#ccc] text-[10px] font-bold mr-2">
                 5.1
               </button>
-              <button className=" px-[6px] bg-white text-black rounded border border-[#ccc] text-[10px] font-bold">
+              <button className="px-[6px] bg-white text-black rounded border border-[#ccc] text-[10px] font-bold">
                 HD
               </button>
             </div>
@@ -121,7 +122,7 @@ function HeaderIWantToBelieve() {
           <div className=" absolute opacity-90 -left-10 min-w-[2000px] top-0 h-[120px] blur-2xl bg-gradient-to-t from-black to-gray-800"></div>
         </div>
 
-        {/* bg-gradient mobile */}
+        {/* bg-gradient Mobile*/}
         <div className="md:hidden">
           <div className="absolute opacity-30 z-0 w-full top-0 bottom-0 bg-gradient-to-b from-black to-blue-500"></div>
           <div className="absolute opacity-60 z-0 w-full top-0 bottom-0 bg-gradient-to-t from-blue-900"></div>
@@ -129,10 +130,12 @@ function HeaderIWantToBelieve() {
         </div>
 
         {/* header bot */}
-        <HeaderBot />
+        <div>
+          <HeaderBot />
+        </div>
       </div>
     </div>
   );
 }
 
-export default HeaderIWantToBelieve;
+export default HeaderFightTheFuture;

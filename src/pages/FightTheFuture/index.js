@@ -4,7 +4,7 @@ import { useState } from "react";
 import DetailsFightTheFuture from "./components/DetailsFightTheFuture";
 import ItemsFightTheFuture from "./components/ItemsFightTheFuture";
 import Footer from "~/Layouts/components/Footer";
-import HeaderFightTheFuture from "./components/HeaderIWantToBelieve";
+import HeaderFightTheFuture from "./components/HeaderFightTheFuture";
 import BtnGoToTop from "~/components/BtnGoToTop";
 
 const tabs = ["YOU MAY ALSO LIKE", "DETAILS"];
