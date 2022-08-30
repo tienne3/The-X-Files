@@ -16,7 +16,7 @@ function Payment() {
       <div className="bg-[#f7f7f9] px-5 md:px-10">
         {/* body top */}
         <div className="text-center pt-[32px] mb-20">
-          <h1 className="text-[28px] md:text-[38px] xl:text-[48px] font-black text-[#040405]">
+          <h1 className="text-[28px] md:text-[38px] xl:text-[48px] font-bold text-[#040405]">
             Choose Your Plan
           </h1>
           <p className="text-[#636E85] text-[15px] lg:text-[17px] mt-[5px]">
@@ -26,7 +26,7 @@ function Payment() {
           <div>
             {tabs.map((tab) => (
               <button
-                className="mx-5 mt-10 text-[#B9BFC8] text-[14px] font-bold tracking-widest border-b-[4px] pb-2 border-b-[#ccc]"
+                className="mx-5 mt-10 text-[#B9BFC8] text-[14px] font-semibold tracking-widest border-b-[4px] pb-2 border-b-[#ccc]"
                 onClick={() => setType(tab)}
                 style={
                   type === tab

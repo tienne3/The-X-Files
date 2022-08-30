@@ -101,7 +101,7 @@ function Footer() {
         <div className="mb-5 text-[14px]">
           <p>
             Design by
-            <span className="hover:text-red-600 ml-1 font-semibold hover:cursor-pointer">
+            <span className="hover:text-red-600 ml-1 font-medium hover:cursor-pointer">
               VM-Tiến
             </span>
           </p>

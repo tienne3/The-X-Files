@@ -6,7 +6,7 @@ function BasePlans(props) {
       {/* col 1 */}
       <div className="relative w-[330px] px-[30px] h-[420px] shadow-md bg-white">
         {/* title */}
-        <p className="text-[20px] text-[#272C35] font-bold mt-[55px]">
+        <p className="text-[20px] text-[#272C35] font-semibold mt-[55px]">
           {props.titleCol1}
         </p>
 
@@ -16,9 +16,9 @@ function BasePlans(props) {
         </p>
 
         {/* price */}
-        <p className=" font-bold text-[#272c35] text-[32px] flex items-center justify-center">
+        <p className=" font-semibold text-[#272c35] text-[32px] flex items-center justify-center">
           {props.priceCol1}
-          <span className="font-bold text-[18px] ml-1 mt-1"> / month</span>
+          <span className="font-semibold text-[18px] ml-1 mt-1"> / month</span>
         </p>
         {/* desc */}
         <p className="pt-[10px] text-[#636E85] text-[14px] leading-5 tracking-wide">
@@ -26,7 +26,7 @@ function BasePlans(props) {
         </p>
         {/* btn */}
         <Link to={"/register"}>
-          <button className="absolute bottom-12 left-[30px] right-[30px] px-[30px] text-[16px] text-[#272C35] font-bold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
+          <button className="absolute bottom-12 left-[30px] right-[30px] px-[30px] text-[16px] text-[#272C35] font-semibold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
             {props.btn}
           </button>
         </Link>
@@ -50,7 +50,7 @@ function BasePlans(props) {
           {props.amount}
         </button>
         {/* title */}
-        <p className="text-[20px] text-[#272C35] font-bold">
+        <p className="text-[20px] text-[#272C35] font-semibold">
           {props.titleCol2}
         </p>
 
@@ -60,9 +60,9 @@ function BasePlans(props) {
         </p>
 
         {/* price */}
-        <p className=" font-bold text-[#272c35] text-[32px] flex items-center justify-center">
+        <p className=" font-semibold text-[#272c35] text-[32px] flex items-center justify-center">
           {props.priceCol2}
-          <span className="font-bold text-[18px] ml-1 mt-1"> / month</span>
+          <span className="font-semibold text-[18px] ml-1 mt-1"> / month</span>
         </p>
         {/* desc */}
         <p className="pt-[10px] text-[#636E85] text-[14px] leading-5 tracking-wide">
@@ -70,7 +70,7 @@ function BasePlans(props) {
         </p>
         {/* btn */}
         <Link to={"/register"}>
-          <button className="absolute bottom-[65px] left-[30px] right-[30px] px-[30px] text-[16px] bg-[#272C35] text-white font-bold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
+          <button className="absolute bottom-[65px] left-[30px] right-[30px] px-[30px] text-[16px] bg-[#272C35] text-white font-semibold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
             {props.btn}
           </button>
         </Link>
@@ -89,7 +89,7 @@ function BasePlans(props) {
       {/* col 3 */}
       <div className="relative w-[330px] px-[30px] h-[420px] shadow-md bg-white">
         {/* title */}
-        <p className="text-[20px] text-[#272C35] font-bold mt-[55px]">
+        <p className="text-[20px] text-[#272C35] font-semibold mt-[55px]">
           {props.titleCol3}
         </p>
 
@@ -99,9 +99,9 @@ function BasePlans(props) {
         </p>
 
         {/* price */}
-        <p className=" font-bold text-[#272c35] text-[32px] flex items-center justify-center">
+        <p className=" font-semibold text-[#272c35] text-[32px] flex items-center justify-center">
           {props.priceCol3}
-          <span className="font-bold text-[18px] ml-1 mt-1"> / month</span>
+          <span className="font-semibold text-[18px] ml-1 mt-1"> / month</span>
         </p>
 
         {/* desc */}
@@ -111,7 +111,7 @@ function BasePlans(props) {
 
         {/* btn */}
         <Link to={"/register"}>
-          <button className="absolute bottom-12 left-[30px] right-[30px] px-[30px] text-[16px] text-[#272C35] font-bold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
+          <button className="absolute bottom-12 left-[30px] right-[30px] px-[30px] text-[16px] text-[#272C35] font-semibold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
             {props.btn}
           </button>
         </Link>

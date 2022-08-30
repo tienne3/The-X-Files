@@ -41,22 +41,22 @@ function HeaderTop() {
       </Link>
 
       {/*  */}
-      <div className="text-[#fff] font-semibold text-[13px] sm:text-[14px] lg:text-[15px] xl:text-[16px]">
+      <div className="text-[#fff] font-semibold text-[13px] sm:text-[14px] lg:text-[15px]">
         <Link
           to={"/payment"}
-          className="hidden sm:inline-block sm:px-5 py-[10px] mr-2 lg:mr-[15px] bg-transparent hover:bg-[#0b0c0fCC] bg-opacity-0 hover:opacity-100 duration-300 md:px-4 md:py-[9px] lg:px-6 lg:py-[13px] min-w-[64px] rounded"
+          className="hidden sm:inline-block sm:px-5 font-medium py-[10px] mr-2 lg:mr-[15px] bg-transparent hover:bg-[#0b0c0fCC] bg-opacity-0 hover:opacity-100 duration-300 md:px-4 md:py-[9px] lg:px-6 lg:py-[13px] min-w-[64px] rounded-lg"
         >
           START YOUR FREE TRIAL
         </Link>
         <button
           onClick={handleLoginModal}
-          className="hidden md:inline-block text-[#a8afbd] font-bold bg-opacity-0 hover:opacity-100 duration-300 hover:bg-[#323843] bg-transparent hover:text-[#fff] md:px-4 md:py-[9px] lg:px-[18px] lg:py-[11px] rounded-lg"
+          className="hidden md:inline-block text-[#a8afbd] font-semibold bg-opacity-0 hover:opacity-100 duration-300 hover:bg-[#323843] bg-transparent hover:text-[#fff] md:px-4 md:py-[9px] lg:px-[18px] lg:py-[11px] rounded-lg"
         >
           LOG IN
         </button>
         <button
           onClick={handleShowMenu}
-          className="font-bold px-[20px] md:hidden py-[10px] text-[14px] bg-[#323843] rounded-lg hover:bg-[#0b0c0fCC]"
+          className="font-semibold px-[20px] md:hidden py-[10px] text-[14px] bg-[#323843] rounded-lg hover:bg-[#0b0c0fCC]"
         >
           <FontAwesomeIcon icon={faBars} />
         </button>

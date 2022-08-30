@@ -6,7 +6,7 @@ function Details() {
       <p className="text-textColorPrimary text-[14px] sm:text-[15px] md:text-[17px] font-semibold mb-2">
         About this Show
       </p>
-      <p className="text-textColorPrimary text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold">
+      <p className="text-textColorPrimary text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[32px] font-semibold">
         The X-Files
       </p>
       <p className="text-[#6E7A91] text-[14px] sm:text-[15px] md:text-[16px] mb-5 mt-2">
@@ -16,7 +16,7 @@ function Details() {
         encounters and abductions, and just about everything else among the
         paranormal.
       </p>
-      <p className="text-[15px] md:text-[16px] lg:text-[17px] text-[#6E7A91] font-bold mb-4">
+      <p className="text-[15px] md:text-[16px] lg:text-[17px] text-[#6E7A91] font-semibold mb-4">
         Starring:{" "}
         <span className="text-[14px] sm:text-[15px] md:text-[16px] font-normal">
           Gillian AndersonDavid DuchovnyMitch Pileggi

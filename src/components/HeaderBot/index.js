@@ -71,7 +71,7 @@ function HeaderBot() {
           {/*  */}
           <div className="mt-4">
             <Link to={"/payment"}>
-              <button className="text-[14px] tracking-wider font-bold px-6 md:px-2 lg:px-6 leading-4 h-[48px] md:mr-0 lg:mr-2 rounded pb-[2px] bg-white hover:bg-[#ffffffCC] duration-300 text-[#040405]">
+              <button className="text-[14px] tracking-wider font-semibold px-6 md:px-2 lg:px-6 leading-4 h-[48px] md:mr-0 lg:mr-2 rounded pb-[2px] bg-white hover:bg-[#ffffffCC] duration-300 text-[#040405]">
                 GET THE DISNEY BUNDLE
               </button>
             </Link>

@@ -28,7 +28,7 @@ function Register() {
     <div>
       <HeaderPayment />
       <div className="bg-[#f7f7f9] pt-[32px] pb-10 text-center">
-        <h1 className="text-[28px] md:text-[38px] xl:text-[48px] font-black text-[#040405]">
+        <h1 className="text-[28px] md:text-[38px] xl:text-[48px] font-semibold text-[#040405]">
           Create Your Account
         </h1>
         <p className="text-[#636E85] text-[14px] sm:text-[15px] md:text-[16px] px-8 lg:text-[17px] mt-[5px]">
@@ -37,7 +37,9 @@ function Register() {
         <form className="bg-white w-[90%] sm:w-[525px] md:w-[580px] h-[560px] md:h-[594px] mx-auto mt-[50px] shadow-md px-[20px] md:px-[56px] py-[30px] md:py-[48px] text-start">
           {/* email */}
           <div className="mb-7">
-            <p className="text-[#636E85] text-[13px] font-bold mb-1">EMAIL</p>
+            <p className="text-[#636E85] text-[13px] font-semibold mb-1">
+              EMAIL
+            </p>
             <input
               type={"email"}
               value={valueEmail}
@@ -48,7 +50,7 @@ function Register() {
 
           {/* password */}
           <div className="mb-7">
-            <p className="text-[#636E85] text-[13px] font-bold mb-1">
+            <p className="text-[#636E85] text-[13px] font-semibold mb-1">
               PASSWORD
             </p>
             <input
@@ -61,7 +63,9 @@ function Register() {
 
           {/* name */}
           <div className="mb-7">
-            <p className="text-[#636E85] text-[13px] font-bold mb-1">NAME</p>
+            <p className="text-[#636E85] text-[13px] font-semibold mb-1">
+              NAME
+            </p>
             <input
               value={valueName}
               onChange={handleValueName}
@@ -71,7 +75,7 @@ function Register() {
 
           {/* birthdate */}
           <div className="mb-7">
-            <p className="text-[#636E85] text-[13px] font-bold mb-1">
+            <p className="text-[#636E85] text-[13px] font-semibold mb-1">
               BIRTHDATE
             </p>
             <input
@@ -84,7 +88,9 @@ function Register() {
 
           {/* gender */}
           <div className="mb-7">
-            <p className="text-[#636E85] text-[13px] font-bold mb-1">GENDER</p>
+            <p className="text-[#636E85] text-[13px] font-semibold mb-1">
+              GENDER
+            </p>
             <select className="w-full outline-none border-[2px] border-[#999] rounded px-2 h-[48px]">
               <option>Male</option>
               <option>Female</option>
@@ -106,7 +112,7 @@ function Register() {
               ? { backgroundColor: "#040405" }
               : {}
           }
-          className="text-[#b9bfc8] bg-[#444] font-bold tracking-widest w-[90%] sm:w-[400px] h-[48px] rounded text-[14px]"
+          className="text-[#b9bfc8] bg-[#444] font-semibold tracking-widest w-[90%] sm:w-[400px] h-[48px] rounded text-[14px]"
         >
           CONTINUE
         </button>

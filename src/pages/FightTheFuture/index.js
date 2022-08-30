@@ -18,7 +18,7 @@ function FightTheFuture() {
         <div className="border-b border-b-[#ccc]">
           {tabs.map((tab) => (
             <button
-              className="text-[#777] hover:text-textBlue mr-8 md:mr-10 pb-3 md:pb-5 text-[14px] font-bold tracking-widest border-b-[4px] border-b-transparent"
+              className="text-[#777] hover:text-textBlue mr-8 md:mr-10 pb-3 md:pb-5 text-[14px] font-semibold tracking-widest border-b-[4px] border-b-transparent"
               onClick={() => setType(tab)}
               style={
                 type === tab

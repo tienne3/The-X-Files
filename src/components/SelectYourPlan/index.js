@@ -11,14 +11,14 @@ function SelectYourPlan() {
       {/* top */}
       <div className="text-center pb-10">
         {/* title */}
-        <p className="text-textGray text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] font-bold">
+        <p className="text-textGray text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] font-semibold">
           Select Your Plan
         </p>
         {/* desc */}
         <p className="text-[16px] md:text-[17px] lg:text-[18px] mt-2 tracking-wide px-4 mb-2 md:mb-0">
           No hidden fees, equipment rentals, or installation appointments.
         </p>
-        <p className="text-[16px] md:text-[17px] lg:text-[18px] font-bold tracking-wide">
+        <p className="text-[16px] md:text-[17px] lg:text-[18px] font-semibold tracking-wide">
           Switch plans or cancel anytime.^^
         </p>
       </div>
@@ -29,7 +29,7 @@ function SelectYourPlan() {
           <div>
             {tabs.map((tab) => (
               <button
-                className="mx-5 lg:mt-8 text-[#B9BFC8] text-[14px] font-bold tracking-widest border-b-[4px] pb-2 border-b-[#ccc]"
+                className="mx-5 lg:mt-8 text-[#B9BFC8] text-[14px] font-semibold tracking-widest border-b-[4px] pb-2 border-b-[#ccc]"
                 onClick={() => setType(tab)}
                 style={
                   type === tab
@@ -78,7 +78,7 @@ function SelectYourPlan() {
               <p className="text-[#888888] text-[14px] font-semibold tracking-wider mt-4 mb-[3px]">
                 30 DAY FREE TRIAL
               </p>
-              <p className="text-textGray font-bold text-[14px] sm:text-[16px] md:text-[18px]">
+              <p className="text-textGray font-semibold text-[14px] sm:text-[16px] md:text-[18px]">
                 Hulu
               </p>
               <Link to={"/register"}>
@@ -99,7 +99,7 @@ function SelectYourPlan() {
               <p className="text-[#888888] text-[14px] font-semibold tracking-wider mt-4 mb-[3px]">
                 30 DAY FREE TRIAL
               </p>
-              <p className="text-textGray font-bold text-[14px] sm:text-[16px] md:text-[18px]">
+              <p className="text-textGray font-semibold text-[14px] sm:text-[16px] md:text-[18px]">
                 Hulu
               </p>
               <Link to={"/register"}>
@@ -131,7 +131,7 @@ function SelectYourPlan() {
                   alt="logo"
                 />
               </div>
-              <p className="text-textGray font-bold text-[14px] sm:text-[16px] lg:text-[18px]">
+              <p className="text-textGray font-semibold text-[14px] sm:text-[16px] lg:text-[18px]">
                 Hulu
               </p>
               <Link to={"/register"}>
@@ -157,7 +157,7 @@ function SelectYourPlan() {
                   alt="logo"
                 />
               </div>
-              <p className="text-textGray font-bold text-[14px] sm:text-[16px] lg:text-[18px]">
+              <p className="text-textGray font-semibold text-[14px] sm:text-[16px] lg:text-[18px]">
                 Hulu (No Ads)
               </p>
               <Link to={"/register"}>
@@ -183,7 +183,7 @@ function SelectYourPlan() {
                   alt="logo"
                 />
               </div>
-              <p className="text-textGray font-bold text-[14px] sm:text-[16px] lg:text-[18px]">
+              <p className="text-textGray font-semibold text-[14px] sm:text-[16px] lg:text-[18px]">
                 Hulu + LIVE TV
               </p>
               <Link to={"/register"}>

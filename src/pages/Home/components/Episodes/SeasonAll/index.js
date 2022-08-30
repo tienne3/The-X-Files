@@ -53,7 +53,7 @@ function SeasonAll(props) {
                 <li className="w-full hover:bg-[#444548] rounded-md">
                   <button
                     onClick={() => setType(season)}
-                    className="px-5 h-[44px] w-full text-start"
+                    className="px-5 h-[44px] w-full text-start text-[15px]"
                     style={{
                       display: "",
                     }}
@@ -86,11 +86,11 @@ function SeasonAll(props) {
               ></span>
             </div>
             {/* film number */}
-            <p className="text-[12px] text-[#272C34] font-semibold tracking-wider pt-2 py-1">
+            <p className="text-[12px] text-[#272C34] font-medium tracking-wider pt-2 py-1">
               EPISODE {film.number}
             </p>
             {/* film name */}
-            <p className="text-[14px] text-textColorPrimary font-bold pb-1">
+            <p className="text-[14px] text-textColorPrimary font-semibold pb-1">
               {film.name}
             </p>
             {/* desc */}

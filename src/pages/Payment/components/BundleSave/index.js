@@ -6,7 +6,7 @@ function BundleSave(props) {
       {/* col 1 */}
       <div className="relative w-[330px] px-[30px] h-[485px] shadow-md bg-white">
         {/* title */}
-        <p className="text-[20px] text-[#272C35] font-bold mt-[55px]">
+        <p className="text-[20px] text-[#272C35] font-semibold mt-[55px]">
           {props.title2Col1}
         </p>
 
@@ -14,9 +14,9 @@ function BundleSave(props) {
         <img className="mx-auto mt-5" src={props.image} alt="logo" />
 
         {/* price */}
-        <p className="font-bold text-[#272c35] text-[32px] flex items-center justify-center">
+        <p className="font-semibold text-[#272c35] text-[32px] flex items-center justify-center">
           {props.price2Col1}
-          <span className="font-bold text-[18px] ml-1 mt-1"> / month</span>
+          <span className="font-semibold text-[18px] ml-1 mt-1"> / month</span>
         </p>
 
         {/* desc */}
@@ -26,7 +26,7 @@ function BundleSave(props) {
 
         {/* btn */}
         <Link to={"/register"}>
-          <button className="absolute bottom-[90px] left-[30px] right-[30px] px-[30px] text-[16px] text-[#272C35] font-bold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
+          <button className="absolute bottom-[90px] left-[30px] right-[30px] px-[30px] text-[16px] text-[#272C35] font-semibold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
             {props.btn2}
           </button>
         </Link>
@@ -66,7 +66,7 @@ function BundleSave(props) {
           {props.amount2}
         </button>
         {/* title */}
-        <p className="text-[20px] text-[#272C35] font-bold">
+        <p className="text-[20px] text-[#272C35] font-semibold">
           {props.title2Col2}
         </p>
 
@@ -74,9 +74,9 @@ function BundleSave(props) {
         <img className="mx-auto mt-5" src={props.image} alt="logo" />
 
         {/* price */}
-        <p className="font-bold text-[#272c35] text-[32px] flex items-center justify-center">
+        <p className="font-semibold text-[#272c35] text-[32px] flex items-center justify-center">
           {props.price2Col2}
-          <span className="font-bold text-[18px] ml-1 mt-1"> / month</span>
+          <span className="font-semibold text-[18px] ml-1 mt-1"> / month</span>
         </p>
 
         {/* desc */}
@@ -85,7 +85,7 @@ function BundleSave(props) {
         </p>
 
         {/* btn */}
-        <button className="absolute bottom-[107px] left-[30px] right-[30px] px-[30px] text-[16px] bg-[#272C35] text-white font-bold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
+        <button className="absolute bottom-[107px] left-[30px] right-[30px] px-[30px] text-[16px] bg-[#272C35] text-white font-semibold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
           {props.btn2}
         </button>
 
@@ -112,7 +112,7 @@ function BundleSave(props) {
       {/* col 3 */}
       <div className="relative w-[330px] px-[30px] h-[485px] shadow-md bg-white">
         {/* title */}
-        <p className="text-[20px] text-[#272C35] font-bold mt-[55px]">
+        <p className="text-[20px] text-[#272C35] font-semibold mt-[55px]">
           {props.title2Col3}
         </p>
 
@@ -120,9 +120,9 @@ function BundleSave(props) {
         <img className="mx-auto mt-5" src={props.image} alt="logo" />
 
         {/* price */}
-        <p className="font-bold text-[#272c35] text-[32px] flex items-center justify-center">
+        <p className="font-semibold text-[#272c35] text-[32px] flex items-center justify-center">
           {props.price2Col3}
-          <span className="font-bold text-[18px] ml-1 mt-1"> / month</span>
+          <span className="font-semibold text-[18px] ml-1 mt-1"> / month</span>
         </p>
 
         {/* desc */}
@@ -131,7 +131,7 @@ function BundleSave(props) {
         </p>
 
         {/* btn */}
-        <button className="absolute bottom-[90px] left-[30px] right-[30px] px-[30px] text-[16px] text-[#272C35] font-bold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
+        <button className="absolute bottom-[90px] left-[30px] right-[30px] px-[30px] text-[16px] text-[#272C35] font-semibold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
           {props.btn2}
         </button>
 

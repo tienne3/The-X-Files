@@ -43,7 +43,7 @@ function StartWatching(props) {
           <LogoSvg />
         </div>
         <p className="text-[20px] md:text-[23px] lg:text-[25px] text-center mt-10 md:mt-[50px] lg:mt-[60px]">
-          Start watching <span className="font-bold">The X-Files</span>
+          Start watching <span className="font-semibold">The X-Files</span>
         </p>
         <p className="text-textColor text-[15px] md:text-[16px] lg:text-[17px] mt-1 text-center">
           11 seasons available (218 episodes)
@@ -62,7 +62,7 @@ function StartWatching(props) {
         {modalLogin && <LoginModal onClick={handleLoginModal} />}
         <Link to={"/payment"}>
           <button
-            className="text-center font-semibold text-white bg-[#040405] hover:bg-[#3c3d3f] duration-300 w-full rounded h-[48px] mt-3 md:mt-2"
+            className="text-center font-medium text-white bg-[#040405] hover:bg-[#3c3d3f] duration-300 w-full rounded h-[48px] mt-3 md:mt-2"
             type={"submit"}
           >
             START YOUR FREE TRIAL

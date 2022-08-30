@@ -67,7 +67,7 @@ function HeaderIWantToBelieve() {
             {/* more */}
             <button
               onClick={handleModalMore}
-              className="text-[13px] md:text-[14px] font-semibold"
+              className="text-[13px] font-semibold"
             >
               MORE
             </button>
@@ -91,23 +91,23 @@ function HeaderIWantToBelieve() {
             </p>
 
             <div className="flex items-center mt-2 md:mt-0">
-              <button className=" px-[6px] bg-white text-black rounded border border-[#ccc] text-[10px] font-bold mr-2">
+              <button className=" px-[6px] bg-white text-black rounded border border-[#ccc] text-[10px] font-semibold mr-2">
                 5.1
               </button>
-              <button className=" px-[6px] bg-white text-black rounded border border-[#ccc] text-[10px] font-bold">
+              <button className=" px-[6px] bg-white text-black rounded border border-[#ccc] text-[10px] font-semibold">
                 HD
               </button>
             </div>
           </div>
           {/*  */}
-          <p className="text-[13px] sm:text-[14px] lg:text-[15px] xl:text-[16px] mt-4 font-medium">
+          <p className="text-[13px] sm:text-[14px] lg:text-[15px] mt-4 font-medium">
             Add HBO Max™ to any Hulu plan for an additional $14.99/month.
           </p>
           {/* btn */}
           <div className="mt-[10px] mb-2 w-full flex justify-center md:justify-start">
             <Link
               to={"/payment"}
-              className="text-[14px] w-full text-center md:w-[230px] pb-[10px] px-6 py-[9px] tracking-wider font-bold rounded bg-white hover:bg-[#ffffffCC] duration-300 text-[#040405]"
+              className="text-[14px] w-full text-center md:w-[240px] pb-[10px] px-5 py-[10px] md:py-[9px] tracking-wider font-semibold rounded bg-white hover:bg-[#ffffffCC] duration-300 text-[#040405]"
             >
               START YOUR FREE TRIAL
             </Link>

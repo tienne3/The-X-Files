@@ -28,7 +28,9 @@ function LoginModal(props) {
         >
           &times;
         </div>
-        <h1 className="text-[24px] my-7 font-bold text-[#272C35]">Log In</h1>
+        <h1 className="text-[24px] my-7 font-semibold text-[#272C35]">
+          Log In
+        </h1>
         <form action="">
           {/* email */}
           <p className="text-[13px] text-[#636E85] tracking-wider font-semibold">

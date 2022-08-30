@@ -62,7 +62,7 @@ function ItemsIWantToBelieve() {
           </div>
 
           {/* name */}
-          <p className="text-[14px] text-textColorPrimary font-bold md:tracking-wide mt-3 md:mt-2">
+          <p className="text-[14px] text-textColorPrimary font-semibold md:tracking-wide mt-3 md:mt-2">
             {film.name}
           </p>
           {/* desciption */}

@@ -51,7 +51,7 @@ function Header() {
 
         {/* header mid */}
         <div className="px-5 w-full bottom-[248px] absolute z-10 md:mx-5 md:top-[130px] lg:top-[155px] xl:top-[190px] text-white">
-          <p className="text-[12px] font-medium md:font-bold tracking-wider text-white opacity-70 md:opacity-50">
+          <p className="text-[12px] font-medium md:font-semibold tracking-wider text-white opacity-70 md:opacity-50">
             11 SEASONS AVAILABLE (218 EPISODES)
           </p>
           {/* title */}
@@ -64,7 +64,7 @@ function Header() {
             sci-fi phen... {/* more */}
             <button
               onClick={handleModalMore}
-              className="text-[13px] md:text-[15px] font-semibold text-white"
+              className="text-[13px] font-semibold text-white"
             >
               MORE
             </button>
@@ -94,7 +94,7 @@ function Header() {
           </div>
 
           <div className="xl:-mt-1">
-            <button className=" px-[6px] mb-2 md:mb-0 bg-white text-black rounded border border-[#ccc] text-[10px] font-bold">
+            <button className=" px-[6px] mb-2 md:mb-0 bg-white text-black rounded border border-[#ccc] text-[10px] font-semibold">
               HD
             </button>
           </div>
@@ -106,7 +106,7 @@ function Header() {
           <div className="mt-[10px] mb-2 w-full flex justify-center md:justify-start">
             <Link
               to={"/payment"}
-              className="text-[14px] w-full text-center md:w-[230px] pb-[10px] px-6 py-[9px] tracking-wider font-bold rounded bg-white hover:bg-[#ffffffCC] duration-300 text-[#040405]"
+              className="text-[14px] w-full text-center md:w-[240px] pb-[10px] px-5 py-[10px] md:py-[9px] tracking-wider font-semibold rounded bg-white hover:bg-[#ffffffCC] duration-300 text-[#040405]"
             >
               START YOUR FREE TRIAL
             </Link>

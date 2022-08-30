@@ -35,7 +35,7 @@ function HeaderPayment() {
 
         <button
           onClick={handleLoginModal}
-          className="text-gray-900 text-[14px] font-bold bg-opacity-50 hover:opacity-100 duration-300 hover:bg-[#323843] bg-gray-400 hover:text-[#fff] px-4 py-[7px] md:px-4 md:py-[9px] lg:px-[18px] lg:py-[11px] rounded-lg"
+          className="text-gray-900 text-[14px] font-semibold bg-opacity-50 hover:opacity-100 duration-300 hover:bg-[#323843] bg-gray-400 hover:text-[#fff] px-4 py-[7px] md:px-4 md:py-[9px] lg:px-[18px] lg:py-[11px] rounded-lg"
         >
           LOG IN
         </button>

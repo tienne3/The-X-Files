@@ -18,7 +18,7 @@ function YouMayLAlsoLike() {
 
   return (
     <div className="mx-2 md:mx-2 lg:mx-7 mt-8 md:mt-0 mb-[50px]">
-      <p className="text-[18px] text-[#292c33] font-bold tracking-wider px-3">
+      <p className="text-[18px] text-[#292c33] font-semibold tracking-wider px-3">
         YOU MAY ALSO LIKE
       </p>
       <div className="auto-cols-[90%] sm:auto-cols-auto grid gap-x-6 grid-flow-col overflow-x-auto md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 py-5 px-3">
@@ -48,7 +48,7 @@ function YouMayLAlsoLike() {
                 <span className="absolute z-0 border-[4px] -top-[7px] -bottom-[7px] -left-[7px] -right-[7px] rounded-[16px] border-[#888] bg-[#000]/[20%] opacity-0 group-hover:opacity-100 duration-300"></span>
               </div>
               {/* name */}
-              <p className="text-[13px] md:text-[14px] mt-2 md:mt-3 font-bold">
+              <p className="text-[13px] md:text-[14px] mt-2 md:mt-3 font-semibold">
                 {film.name}
               </p>
               {/* desciption */}
