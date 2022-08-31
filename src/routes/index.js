@@ -1,5 +1,5 @@
 // Layout
-import { HeaderOnly } from "~/Layouts";
+import { HeaderOnly } from "~/layouts";
 
 import Home from "~/pages/Home";
 import Payment from "~/pages/Payment";

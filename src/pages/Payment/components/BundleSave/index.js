@@ -1,33 +1,47 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-function BundleSave(props) {
+function BundleSave({
+  title2Col1,
+  image,
+  price2Col1,
+  desc2Col1,
+  btn2,
+  amount2,
+  title2Col2,
+  price2Col2,
+  desc2Col2,
+  title2Col3,
+  price2Col3,
+  desc2Col3,
+}) {
   return (
     <div className="mx-auto pb-[60px] mt-[50px] auto-cols-[90%] sm:auto-cols-auto w-full items-center grid gap-x-5 sm:gapx-10 lg:gap-x-0 lg:justify-center lg:flex grid-flow-col overflow-x-auto">
       {/* col 1 */}
       <div className="relative w-[330px] px-[30px] h-[485px] shadow-md bg-white">
         {/* title */}
         <p className="text-[20px] text-[#272C35] font-semibold mt-[55px]">
-          {props.title2Col1}
+          {title2Col1}
         </p>
 
         {/* image */}
-        <img className="mx-auto mt-5" src={props.image} alt="logo" />
+        <img className="mx-auto mt-5" src={image} alt="logo" />
 
         {/* price */}
         <p className="font-semibold text-[#272c35] text-[32px] flex items-center justify-center">
-          {props.price2Col1}
+          {price2Col1}
           <span className="font-semibold text-[18px] ml-1 mt-1"> / month</span>
         </p>
 
         {/* desc */}
         <p className="pt-[10px] text-[#636E85] text-[14px] leading-5 tracking-wide">
-          {props.desc2Col1}
+          {desc2Col1}
         </p>
 
         {/* btn */}
         <Link to={"/register"}>
           <button className="absolute bottom-[90px] left-[30px] right-[30px] px-[30px] text-[16px] text-[#272C35] font-semibold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
-            {props.btn2}
+            {btn2}
           </button>
         </Link>
 
@@ -63,30 +77,28 @@ function BundleSave(props) {
       {/* col 2 */}
       <div className="relative w-[330px] px-[30px] h-[520px] border-t-[4px] border-t-textGreen shadow-md bg-white">
         <button className="text-white bg-textGreen rounded-full text-[12px] tracking-wider font-extrabold px-6 py-2 mt-7 mb-3">
-          {props.amount2}
+          {amount2}
         </button>
         {/* title */}
-        <p className="text-[20px] text-[#272C35] font-semibold">
-          {props.title2Col2}
-        </p>
+        <p className="text-[20px] text-[#272C35] font-semibold">{title2Col2}</p>
 
         {/* image */}
-        <img className="mx-auto mt-5" src={props.image} alt="logo" />
+        <img className="mx-auto mt-5" src={image} alt="logo" />
 
         {/* price */}
         <p className="font-semibold text-[#272c35] text-[32px] flex items-center justify-center">
-          {props.price2Col2}
+          {price2Col2}
           <span className="font-semibold text-[18px] ml-1 mt-1"> / month</span>
         </p>
 
         {/* desc */}
         <p className="pt-[10px] text-[#636E85] text-[14px] leading-5 tracking-wide">
-          {props.desc2Col2}
+          {desc2Col2}
         </p>
 
         {/* btn */}
         <button className="absolute bottom-[107px] left-[30px] right-[30px] px-[30px] text-[16px] bg-[#272C35] text-white font-semibold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
-          {props.btn2}
+          {btn2}
         </button>
 
         {/*  */}
@@ -113,26 +125,26 @@ function BundleSave(props) {
       <div className="relative w-[330px] px-[30px] h-[485px] shadow-md bg-white">
         {/* title */}
         <p className="text-[20px] text-[#272C35] font-semibold mt-[55px]">
-          {props.title2Col3}
+          {title2Col3}
         </p>
 
         {/* image */}
-        <img className="mx-auto mt-5" src={props.image} alt="logo" />
+        <img className="mx-auto mt-5" src={image} alt="logo" />
 
         {/* price */}
         <p className="font-semibold text-[#272c35] text-[32px] flex items-center justify-center">
-          {props.price2Col3}
+          {price2Col3}
           <span className="font-semibold text-[18px] ml-1 mt-1"> / month</span>
         </p>
 
         {/* desc */}
         <p className="pt-[10px] text-[#636E85] text-[14px] leading-5 tracking-wide">
-          {props.desc2Col3}
+          {desc2Col3}
         </p>
 
         {/* btn */}
         <button className="absolute bottom-[90px] left-[30px] right-[30px] px-[30px] text-[16px] text-[#272C35] font-semibold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
-          {props.btn2}
+          {btn2}
         </button>
 
         {/*  */}
@@ -167,4 +179,18 @@ function BundleSave(props) {
   );
 }
 
+BundleSave.propTypes = {
+  title2Col1: PropTypes.string,
+  image: PropTypes.string,
+  price2Col1: PropTypes.string,
+  desc2Col1: PropTypes.string,
+  btn2: PropTypes.string,
+  amount2: PropTypes.string,
+  title2Col2: PropTypes.string,
+  price2Col2: PropTypes.string,
+  desc2Col2: PropTypes.string,
+  title2Col3: PropTypes.string,
+  price2Col3: PropTypes.string,
+  desc2Col3: PropTypes.string,
+};
 export default BundleSave;

@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import LoginModal from "../LoginModal";
 import { useState, useEffect } from "react";
 import LogoSvg from "~/assets/Icons/LogoSvg";
+import PropTypes from "prop-types";
 
-function StartWatching(props) {
+function StartWatching({ onClick }) {
   const [modalLogin, setModaLogin] = useState(false);
 
   const handleLoginModal = () => {
@@ -24,7 +25,7 @@ function StartWatching(props) {
 
   return (
     <div
-      onClick={props.onClick}
+      onClick={onClick}
       className="modal text-semibold fixed z-50 top-0 bottom-0 left-0 right-0 bg-black/[50%] "
     >
       <div
@@ -32,7 +33,7 @@ function StartWatching(props) {
         className="relative w-[90%] sm:w-[80%] bg-white md:w-[600px] h-[522px] border border-[#777] z-50 mx-auto my-auto mt-[69px] md:mt-[100px] rounded-md shadow-xl py-10 px-5 sm:px-[60px]"
       >
         <div
-          onClick={props.onClick}
+          onClick={onClick}
           className="absolute cursor-pointer right-0 top-0 opacity-60 leading-[50px] text-[40px] md:text-[45px] font-thin px-5 text-black"
         >
           &times;
@@ -75,5 +76,7 @@ function StartWatching(props) {
     </div>
   );
 }
-
+StartWatching.propTypes = {
+  onClick: PropTypes.func,
+};
 export default StartWatching;

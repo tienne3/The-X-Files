@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Footer from "~/Layouts/components/Footer";
+import Footer from "~/layouts/components/Footer";
 import HeaderPayment from "../Payment/components/HeaderPayment";
 
 function TermsApply() {

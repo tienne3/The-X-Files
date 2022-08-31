@@ -3,7 +3,7 @@ import YouMayLAlsoLike from "~/components/YouMayLAlsoLike";
 import { useState } from "react";
 import DetailsIWantToBelieve from "./components/DetailsIWantToBelieve";
 import ItemsIWantToBelieve from "./components/ItemsIWantToBelieve";
-import Footer from "~/Layouts/components/Footer";
+import Footer from "~/layouts/components/Footer";
 import HeaderIWantToBelieve from "./components/HeaderIWantToBelieve";
 import BtnGoToTop from "~/components/BtnGoToTop";
 

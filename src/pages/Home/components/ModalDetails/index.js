@@ -1,10 +1,11 @@
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropTypes from "prop-types";
 
-function ModalDetails(props) {
+function ModalDetails({ onClick }) {
   return (
     <div
-      onClick={props.onClick}
+      onClick={onClick}
       className="modal text-semibold fixed z-50 top-0 bottom-0 left-0 right-0 bg-black/[50%] md:px-20 "
     >
       <div
@@ -13,7 +14,7 @@ function ModalDetails(props) {
       >
         {/* hide btn */}
         <div
-          onClick={props.onClick}
+          onClick={onClick}
           className="absolute cursor-pointer right-0 top-0 opacity-60 leading-[50px] text-[40px] md:text-[45px] font-thin px-5 text-black"
         >
           &times;
@@ -70,4 +71,7 @@ function ModalDetails(props) {
   );
 }
 
+ModalDetails.propTypes = {
+  onClick: PropTypes.func,
+};
 export default ModalDetails;

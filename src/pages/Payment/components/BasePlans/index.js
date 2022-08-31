@@ -1,33 +1,48 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-function BasePlans(props) {
+function BasePlans({
+  titleCol1,
+  offerCol12,
+  priceCol1,
+  descCol1,
+  btn,
+  amount,
+  titleCol2,
+  priceCol2,
+  descCol2,
+  titleCol3,
+  offerCol3,
+  priceCol3,
+  descCol3,
+}) {
   return (
     <div className="mx-auto pb-[100px] mt-[50px] w-full auto-cols-[90%] sm:auto-cols-auto items-center grid gap-x-5 sm:gapx-10 lg:gap-x-0 lg:justify-center lg:flex grid-flow-col overflow-x-auto">
       {/* col 1 */}
       <div className="relative w-[330px] px-[30px] h-[420px] shadow-md bg-white">
         {/* title */}
         <p className="text-[20px] text-[#272C35] font-semibold mt-[55px]">
-          {props.titleCol1}
+          {titleCol1}
         </p>
 
         {/* offer */}
         <p className="text-[17px] text-textGreen font-semibold mb-2 mt-5">
-          {props.offerCol12}
+          {offerCol12}
         </p>
 
         {/* price */}
         <p className=" font-semibold text-[#272c35] text-[32px] flex items-center justify-center">
-          {props.priceCol1}
+          {priceCol1}
           <span className="font-semibold text-[18px] ml-1 mt-1"> / month</span>
         </p>
         {/* desc */}
         <p className="pt-[10px] text-[#636E85] text-[14px] leading-5 tracking-wide">
-          {props.descCol1}
+          {descCol1}
         </p>
         {/* btn */}
         <Link to={"/register"}>
           <button className="absolute bottom-12 left-[30px] right-[30px] px-[30px] text-[16px] text-[#272C35] font-semibold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
-            {props.btn}
+            {btn}
           </button>
         </Link>
 
@@ -47,31 +62,29 @@ function BasePlans(props) {
       {/* col 2 */}
       <div className="relative w-[330px] px-[30px] h-[455px] border-t-[4px] border-t-textGreen shadow-md bg-white ">
         <button className="text-white bg-textGreen rounded-full text-[12px] tracking-wider font-extrabold px-6 py-2 mt-7 mb-3">
-          {props.amount}
+          {amount}
         </button>
         {/* title */}
-        <p className="text-[20px] text-[#272C35] font-semibold">
-          {props.titleCol2}
-        </p>
+        <p className="text-[20px] text-[#272C35] font-semibold">{titleCol2}</p>
 
         {/* offer */}
         <p className="text-[17px] text-textGreen font-semibold mb-2 mt-5">
-          {props.offerCol12}
+          {offerCol12}
         </p>
 
         {/* price */}
         <p className=" font-semibold text-[#272c35] text-[32px] flex items-center justify-center">
-          {props.priceCol2}
+          {priceCol2}
           <span className="font-semibold text-[18px] ml-1 mt-1"> / month</span>
         </p>
         {/* desc */}
         <p className="pt-[10px] text-[#636E85] text-[14px] leading-5 tracking-wide">
-          {props.descCol2}
+          {descCol2}
         </p>
         {/* btn */}
         <Link to={"/register"}>
           <button className="absolute bottom-[65px] left-[30px] right-[30px] px-[30px] text-[16px] bg-[#272C35] text-white font-semibold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
-            {props.btn}
+            {btn}
           </button>
         </Link>
 
@@ -90,29 +103,29 @@ function BasePlans(props) {
       <div className="relative w-[330px] px-[30px] h-[420px] shadow-md bg-white">
         {/* title */}
         <p className="text-[20px] text-[#272C35] font-semibold mt-[55px]">
-          {props.titleCol3}
+          {titleCol3}
         </p>
 
         {/* offer */}
         <p className="text-[17px] text-textGreen font-semibold mb-2 mt-5">
-          {props.offerCol3}
+          {offerCol3}
         </p>
 
         {/* price */}
         <p className=" font-semibold text-[#272c35] text-[32px] flex items-center justify-center">
-          {props.priceCol3}
+          {priceCol3}
           <span className="font-semibold text-[18px] ml-1 mt-1"> / month</span>
         </p>
 
         {/* desc */}
         <p className="pt-[10px] text-[#636E85] text-[14px] leading-5 tracking-wide">
-          {props.descCol3}
+          {descCol3}
         </p>
 
         {/* btn */}
         <Link to={"/register"}>
           <button className="absolute bottom-12 left-[30px] right-[30px] px-[30px] text-[16px] text-[#272C35] font-semibold tracking-wider border-[2px] rounded-md h-[48px] border-[#272C35]">
-            {props.btn}
+            {btn}
           </button>
         </Link>
         {/*  */}
@@ -142,4 +155,19 @@ function BasePlans(props) {
   );
 }
 
+BasePlans.propTypes = {
+  titleCol1: PropTypes.string,
+  offerCol12: PropTypes.string,
+  priceCol1: PropTypes.string,
+  descCol1: PropTypes.string,
+  btn: PropTypes.string,
+  amount: PropTypes.string,
+  titleCol2: PropTypes.string,
+  priceCol2: PropTypes.string,
+  descCol2: PropTypes.string,
+  titleCol3: PropTypes.string,
+  offerCol3: PropTypes.string,
+  priceCol3: PropTypes.string,
+  descCol3: PropTypes.string,
+};
 export default BasePlans;

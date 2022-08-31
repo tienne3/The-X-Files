@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-function LoginModal(props) {
+function LoginModal({ onClick }) {
   const [valueEmail, setValueEmail] = useState("");
   const [valuePassword, setvaluePassword] = useState("");
 
@@ -15,7 +16,7 @@ function LoginModal(props) {
 
   return (
     <div
-      onClick={props.onClick}
+      onClick={onClick}
       className="modal text-semibold fixed z-50 top-0 bottom-0 left-0 right-0 bg-black/[50%] "
     >
       <div
@@ -23,7 +24,7 @@ function LoginModal(props) {
         className="relative bg-white w-[90%] sm:w-[80%] md:w-[432px] h-[520px] md:h-[560px] lg:h-[600px] z-50 mx-auto my-auto mt-[70px] md:mt-[100px] lg:mt-[60px] xl:mt-20 shadow-xl py-10 px-6 sm:px-7 md:px-7 lg:px-10 rounded-md"
       >
         <div
-          onClick={props.onClick}
+          onClick={onClick}
           className="absolute cursor-pointer right-0 top-0 opacity-60 leading-[50px] text-[40px] md:text-[45px] font-thin px-5 text-black"
         >
           &times;
@@ -84,5 +85,9 @@ function LoginModal(props) {
     </div>
   );
 }
+
+LoginModal.propTypes = {
+  onClick: PropTypes.func,
+};
 
 export default LoginModal;
