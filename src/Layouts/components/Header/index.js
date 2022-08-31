@@ -51,7 +51,7 @@ function Header() {
 
         {/* header mid */}
         <div className="px-5 w-full bottom-[248px] absolute z-10 md:mx-5 md:top-[130px] lg:top-[155px] xl:top-[190px] text-white">
-          <p className="text-[12px] font-medium md:font-semibold tracking-wider text-white opacity-70 md:opacity-50">
+          <p className="text-[12px] font-medium tracking-wider text-white opacity-70 md:opacity-50">
             11 SEASONS AVAILABLE (218 EPISODES)
           </p>
           {/* title */}
@@ -59,24 +59,24 @@ function Header() {
             The X-Files
           </h1>
           {/* desc */}
-          <p className="text-[14px] lg:text-[15px] mb-2 md:mb-2 lg:mb-3">
+          <p className="text-[13px] md:text-[14px] mb-2 md:mb-2 lg:mb-3">
             The truth is out there. FBI agents Scully and Mulder seek it in this
             sci-fi phen... {/* more */}
             <button
               onClick={handleModalMore}
-              className="text-[13px] font-semibold text-white"
+              className="text-[12px] md:text-[13px] font-semibold text-white"
             >
               MORE
             </button>
           </p>
           <div>{modalMore && <ModalMore onClick={handleModalMore} />}</div>
-          <p className="text-[13px] sm:text-[14px] md:text-[14px] lg:text-[15px] mb-3">
+          <p className="text-[13px] md:text-[14px] mb-3">
             <span className="font-semibold">Starring:</span>{" "}
             <span className="opacity-80 md:opacity-100">
               Gillian Anderson, David Duchovny, Mitch Pileggi
             </span>
           </p>
-          <div className="flex text-[13px] sm:text-[14px] md:text-[14px] lg:text-[15px]">
+          <div className="flex text-[13px] md:text-[14px]">
             <p>TV14</p>
             <ul className="list-disc mx-5">
               <li>
@@ -85,7 +85,7 @@ function Header() {
               </li>
             </ul>
           </div>
-          <div className="flex text-[13px] sm:text-[14px] md:text-[14px] lg:text-[15px] mb-1 md:mb-0">
+          <div className="flex text-[13px] md:text-[14px] mb-1 md:mb-0">
             <p>Supernatural</p>
             <ul className="flex list-disc mx-5">
               <li>TV Series</li>
@@ -98,7 +98,7 @@ function Header() {
               HD
             </button>
           </div>
-          <p className="hidden md:inline-block md:text-[14px] lg:text-[15px] mt-3">
+          <p className="hidden md:inline-block text-[13px] md:text-[14px] mt-3">
             Stream thousands of shows and movies, with plans starting at
             $6.99/month
           </p>
@@ -111,7 +111,7 @@ function Header() {
               START YOUR FREE TRIAL
             </Link>
           </div>
-          <p className="opacity-80 text-center md:text-start text-[12px] font-normal tracking-wider text-white">
+          <p className="opacity-80 text-center md:text-start text-[11px] font-normal tracking-wider text-white">
             New subscribers only.
           </p>
         </div>

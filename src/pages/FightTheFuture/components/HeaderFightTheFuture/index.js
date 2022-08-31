@@ -58,33 +58,33 @@ function HeaderFightTheFuture() {
             alt="Fight The Future"
           />
           {/* desc */}
-          <p className="text-[13px] sm:text-[14px] lg:text-[15px] mt-3 mb-2 lg:mb-3">
-            <span className="mr-1 tracking-wider text-[13px] sm:text-[14px]">
+          <p className="text-[13px] md:text-[14px] mt-3 mb-2 lg:mb-3">
+            <span className="mr-1 tracking-wider text-[13px] md:text-[14px]">
               FBI agents Mulder and Scully probe events that may prove the
               exis..
             </span>
             <button
               onClick={handleModalMore}
-              className="text-[13px] font-semibold"
+              className="text-[12px] md:text-[13px] font-semibold"
             >
               MORE
             </button>
           </p>
           <div>{modalMore && <ModalMore onClick={handleModalMore} />}</div>
-          <p className="text-[13px] sm:text-[14px] lg:text-[15px]">
-            <span className=" font-semibold">Starring:</span>{" "}
-            <span className="text-[13px] sm:text-[14px] opacity-90 md:opacity-100">
+          <p className="text-[13px] md:text-[14px]">
+            <span className="font-medium">Starring:</span>{" "}
+            <span className="text-[13px] md:text-[14px] opacity-90 md:opacity-100">
               David Duchovny, Gillian Anderson, Billy Connolly
             </span>
           </p>
-          <p className="text-[13px] sm:text-[14px] lg:text-[15px] font-semibold mb-2">
+          <p className="text-[13px] md:text-[14px] font-medium mb-2">
             Director:
             <span className="mx-2 font-normal">Rob Bowman</span>
           </p>
 
           {/*  */}
           <div className="flex items-center flex-wrap mr-2">
-            <p className="text-[13px] sm:text-[14px] lg:text-[15px] font-semibold">
+            <p className="text-[13px] md:text-[14px] font-medium">
               PG-13:
               <span className="mx-2 font-normal">
                 Thriller, Science Fiction, Horror, Movie 1998
@@ -92,16 +92,16 @@ function HeaderFightTheFuture() {
             </p>
 
             <div className="flex items-center mt-2 md:mt-0">
-              <button className="px-[6px] bg-white text-black rounded border border-[#ccc] text-[10px] font-semibold mr-2">
+              <button className="px-[5px] leading-4 bg-white text-black rounded border border-[#ccc] text-[10px] font-semibold mr-2">
                 5.1
               </button>
-              <button className="px-[6px] bg-white text-black rounded border border-[#ccc] text-[10px] font-semibold">
+              <button className="px-[5px] leading-4 bg-white text-black rounded border border-[#ccc] text-[10px] font-semibold">
                 HD
               </button>
             </div>
           </div>
           {/*  */}
-          <p className="text-[13px] sm:text-[14px] lg:text-[15px] mt-4 font-medium">
+          <p className="text-[14px] md:text-[15px] mt-4 font-medium">
             Add HBO Max™ to any Hulu plan for an additional $14.99/month.
           </p>
           {/* btn */}
@@ -113,7 +113,7 @@ function HeaderFightTheFuture() {
               START YOUR FREE TRIAL
             </Link>
           </div>
-          <p className="opacity-80 text-center md:text-start text-[12px] font-normal tracking-wider text-white">
+          <p className="opacity-80 text-center md:text-start text-[11px] font-normal tracking-wider text-white">
             New subscribers only.
           </p>
         </div>

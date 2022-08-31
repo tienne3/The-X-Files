@@ -59,31 +59,31 @@ function HeaderIWantToBelieve() {
             alt="I Want To Believe"
           />
           {/* desc */}
-          <p className="text-[13px] sm:text-[14px] lg:text-[15px] mt-3 mb-2 lg:mb-3">
-            <span className="mr-1 tracking-wider text-[14px]">
+          <p className="text-[13px] md:text-[14px] mt-3 mb-2 lg:mb-3">
+            <span className="mr-1 tracking-wider text-[13px] md:text-[14px]">
               Mysterious kidnappings in an icy rural town prompts the FBI to
               reunite parano...
             </span>{" "}
             {/* more */}
             <button
               onClick={handleModalMore}
-              className="text-[13px] font-semibold"
+              className="text-[12px] md:text-[13px] font-semibold"
             >
               MORE
             </button>
           </p>
           <div>{modalMore && <ModalMore onClick={handleModalMore} />}</div>
-          <p className="text-[13px] sm:text-[14px] lg:text-[15px]">
-            <span className="font-semibold">Starring:</span> David Duchovny,
+          <p className="text-[13px] md:text-[14px]">
+            <span className="font-medium">Starring:</span> David Duchovny,
             Gillian Anderson, Billy Connolly
           </p>
-          <p className="text-[13px] sm:text-[14px] lg:text-[15px] font-semibold mb-2">
+          <p className="text-[13px] md:text-[14px] font-medium mb-2">
             Director:
             <span className="mx-2 font-normal">Chris Carter</span>
           </p>
           {/*  */}
           <div className="flex items-center flex-wrap mr-2">
-            <p className="text-[13px] sm:text-[14px] lg:text-[15px] font-semibold">
+            <p className="text-[13px] md:text-[14px] font-medium">
               PG-13:
               <span className="mx-2 font-normal">
                 Thriller, Drama, Mystery, Science Fiction, Movie 2008
@@ -91,16 +91,16 @@ function HeaderIWantToBelieve() {
             </p>
 
             <div className="flex items-center mt-2 md:mt-0">
-              <button className=" px-[6px] bg-white text-black rounded border border-[#ccc] text-[10px] font-semibold mr-2">
+              <button className="px-[5px] leading-4 bg-white text-black rounded border border-[#ccc] text-[10px] font-semibold mr-2">
                 5.1
               </button>
-              <button className=" px-[6px] bg-white text-black rounded border border-[#ccc] text-[10px] font-semibold">
+              <button className="px-[5px] leading-4 bg-white text-black rounded border border-[#ccc] text-[10px] font-semibold">
                 HD
               </button>
             </div>
           </div>
           {/*  */}
-          <p className="text-[13px] sm:text-[14px] lg:text-[15px] mt-4 font-medium">
+          <p className="text-[14px] md:text-[15px] mt-4 font-medium">
             Add HBO Max™ to any Hulu plan for an additional $14.99/month.
           </p>
           {/* btn */}
@@ -112,7 +112,7 @@ function HeaderIWantToBelieve() {
               START YOUR FREE TRIAL
             </Link>
           </div>
-          <p className="opacity-80 text-center md:text-start text-[12px] font-normal tracking-wider text-white">
+          <p className="opacity-80 text-center md:text-start text-[11px] font-normal tracking-wider text-white">
             New subscribers only.
           </p>
         </div>
