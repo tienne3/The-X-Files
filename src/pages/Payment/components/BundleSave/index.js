@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { memo } from "react";
 
 function BundleSave({
   title2Col1,
@@ -193,4 +194,4 @@ BundleSave.propTypes = {
   price2Col3: PropTypes.string,
   desc2Col3: PropTypes.string,
 };
-export default BundleSave;
+export default memo(BundleSave);

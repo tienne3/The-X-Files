@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 function VideoIntro() {
   return (
     <div className="flex justify-center px-2 mx-auto mt-5 md:mt-0 mb-0 md:mb-5 ">
@@ -13,4 +15,4 @@ function VideoIntro() {
   );
 }
 
-export default VideoIntro;
+export default memo(VideoIntro);

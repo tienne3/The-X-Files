@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import bg03 from "~/assets/imgs/bg03.jpg";
 import bg04 from "~/assets/imgs/bg04.jpg";
@@ -141,4 +141,4 @@ function HeaderFightTheFuture() {
   );
 }
 
-export default HeaderFightTheFuture;
+export default memo(HeaderFightTheFuture);

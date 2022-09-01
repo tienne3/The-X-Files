@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 function LogoSvg() {
   return (
     <svg
@@ -26,4 +28,4 @@ function LogoSvg() {
   );
 }
 
-export default LogoSvg;
+export default memo(LogoSvg);

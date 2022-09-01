@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { memo } from "react";
 
 function BasePlans({
   titleCol1,
@@ -170,4 +171,4 @@ BasePlans.propTypes = {
   priceCol3: PropTypes.string,
   descCol3: PropTypes.string,
 };
-export default BasePlans;
+export default memo(BasePlans);

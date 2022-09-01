@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import brand from "~/assets/imgs/brand.png";
 import ModalDetails from "~/pages/Home/components/ModalDetails";
@@ -89,4 +89,4 @@ function HeaderBot() {
   );
 }
 
-export default HeaderBot;
+export default memo(HeaderBot);

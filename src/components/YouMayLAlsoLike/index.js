@@ -1,7 +1,7 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function YouMayLAlsoLike() {
@@ -26,8 +26,8 @@ function YouMayLAlsoLike() {
           <div key={film.id}>
             <Link
               to={
-                (film.id === "1" && "/fight-the-future") ||
-                (film.id === "2" && "/i-want-to-believe") ||
+                (film.id === "1" && "/i-want-to-believe") ||
+                (film.id === "2" && "/fight-the-future") ||
                 (film.id === "3" && "/series-TheX-Files")
               }
             >
@@ -63,4 +63,4 @@ function YouMayLAlsoLike() {
   );
 }
 
-export default YouMayLAlsoLike;
+export default memo(YouMayLAlsoLike);

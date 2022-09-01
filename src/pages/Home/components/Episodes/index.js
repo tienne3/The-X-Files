@@ -1,5 +1,5 @@
 import StartWatching from "~/components/StartWatching";
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
@@ -127,4 +127,4 @@ function Episodes() {
   );
 }
 
-export default Episodes;
+export default memo(Episodes);

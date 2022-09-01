@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import LogoSvg from "~/assets/Icons/LogoSvg";
 import LoginModal from "~/components/LoginModal";
@@ -67,4 +67,4 @@ function HeaderTop() {
   );
 }
 
-export default HeaderTop;
+export default memo(HeaderTop);

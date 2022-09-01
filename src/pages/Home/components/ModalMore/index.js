@@ -8,7 +8,7 @@ function ModalMore({ onClick }) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative px-5 md:px-8 lg:px-10 bg-white text-black w-[80%] sm:w-[80%] md:w-[600px] h-[410px] sm:h-[340px] md:h-[340px] lg:h-[360px] xl:h-[410px] z-50 mx-auto my-auto mt-[150px] sm:mt-[180px] lg:mt-40 shadow-xl p-10 rounded-md"
+        className="relative px-5 md:px-8 lg:px-10 bg-white text-black w-[80%] sm:w-[80%] md:w-[600px] h-[450px] sm:h-[340px] md:h-[340px] lg:h-[360px] xl:h-[410px] z-50 mx-auto my-auto mt-[150px] sm:mt-[180px] lg:mt-40 shadow-xl p-10 rounded-md"
       >
         <div
           onClick={onClick}

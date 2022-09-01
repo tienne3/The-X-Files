@@ -7,6 +7,7 @@ import {
 import icon1 from "~/assets/imgs/icon1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { memo } from "react";
 
 function Footer() {
   return (
@@ -86,7 +87,7 @@ function Footer() {
         </div>
 
         {/* footer last */}
-        <div className="flex flex-wrap gap-x-10 xl:gap-x-0 leading-7 md:leading-10 items-center justify-between mt-10  text-textFooter text-[13px]">
+        <div className="flex flex-wrap gap-x-10 xl:gap-x-0 leading-7 md:leading-10 items-center justify-around md:justify-between mt-10  text-textFooter text-[13px]">
           <p>© 2022 Hulu, LLC</p>
           <Link className="flex items-center" to={"#"}>
             <img className="mr-2 max-h-5" src={icon1} alt="icon1" />
@@ -111,4 +112,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default memo(Footer);

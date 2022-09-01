@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import bg01 from "~/assets/imgs/bg01.jpg";
 import bg02 from "~/assets/imgs/bg02.jpg";
@@ -138,4 +138,4 @@ function HeaderIWantToBelieve() {
   );
 }
 
-export default HeaderIWantToBelieve;
+export default memo(HeaderIWantToBelieve);
