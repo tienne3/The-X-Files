@@ -1,7 +1,7 @@
 import { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import LogoSvg from "~/assets/Icons/LogoSvg";
-import LoginModal from "~/components/LoginModal";
+import ModalLogin from "~/components/ModalLogin";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import MenuMobile from "~/components/MenuMobile";
@@ -11,7 +11,7 @@ function HeaderTop() {
   const [showMenu, setShowMenu] = useState(false);
 
   // đóng, mở login modal
-  const handleLoginModal = () => {
+  const handleModalLogin = () => {
     setModaLogin(!modalLogin);
   };
 
@@ -49,7 +49,7 @@ function HeaderTop() {
           START YOUR FREE TRIAL
         </Link>
         <button
-          onClick={handleLoginModal}
+          onClick={handleModalLogin}
           className="hidden md:inline-block text-[#a8afbd] font-semibold bg-opacity-0 hover:opacity-100 duration-300 hover:bg-[#323843] bg-transparent hover:text-[#fff] md:px-4 md:py-[9px] lg:px-[18px] lg:py-[11px] rounded-lg"
         >
           LOG IN
@@ -61,7 +61,7 @@ function HeaderTop() {
           <FontAwesomeIcon icon={faBars} />
         </button>
         <div>{showMenu && <MenuMobile />}</div>
-        <div>{modalLogin && <LoginModal onClick={handleLoginModal} />}</div>
+        <div>{modalLogin && <ModalLogin onClick={handleModalLogin} />}</div>
       </div>
     </div>
   );

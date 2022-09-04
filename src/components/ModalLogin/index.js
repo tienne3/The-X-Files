@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-function LoginModal({ onClick }) {
+function ModalLogin({ onClick }) {
   const [valueEmail, setValueEmail] = useState("");
   const [valuePassword, setvaluePassword] = useState("");
 
@@ -86,8 +86,8 @@ function LoginModal({ onClick }) {
   );
 }
 
-LoginModal.propTypes = {
+ModalLogin.propTypes = {
   onClick: PropTypes.func,
 };
 
-export default LoginModal;
+export default ModalLogin;

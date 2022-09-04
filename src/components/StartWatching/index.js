@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import LoginModal from "../LoginModal";
+import ModalLogin from "../ModalLogin";
 import { useState, useEffect } from "react";
 import LogoSvg from "~/assets/Icons/LogoSvg";
 import PropTypes from "prop-types";
@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 function StartWatching({ onClick }) {
   const [modalLogin, setModaLogin] = useState(false);
 
-  const handleLoginModal = () => {
+  const handleModalLogin = () => {
     setModaLogin(!modalLogin);
   };
   // đóng login modal
@@ -54,13 +54,13 @@ function StartWatching({ onClick }) {
         </p>
 
         <button
-          onClick={handleLoginModal}
+          onClick={handleModalLogin}
           className="text-center font-semibold text-[#040405] hover:text-white bg-white hover:bg-[#6d6d6f] border-[2px] duration-300 border-[#000] w-full rounded h-[48px] mt-8"
           type={"submit"}
         >
           LOG IN
         </button>
-        {modalLogin && <LoginModal onClick={handleLoginModal} />}
+        {modalLogin && <ModalLogin onClick={handleModalLogin} />}
         <Link to={"/payment"}>
           <button
             className="text-center font-medium text-white bg-[#040405] hover:bg-[#3c3d3f] duration-300 w-full rounded h-[48px] mt-3 md:mt-2"
