@@ -11,7 +11,7 @@ function HeaderBot() {
     setModalDetails(!modalDetails);
   };
 
-  // đóng login modal, more, deatils
+  // đóng modal
   useEffect(() => {
     function onKeyDown(e) {
       if (e.keyCode === 27) {

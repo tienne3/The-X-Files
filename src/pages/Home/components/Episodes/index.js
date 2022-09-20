@@ -1,40 +1,24 @@
-import StartWatching from "~/components/StartWatching";
 import { memo, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addType } from "~/redux/addSlice";
 
 const seasons = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
 function Episodes() {
-  const [modalStartWatching, setModalStartWatching] = useState(false);
   const [showSelectSeason, setShowSelectSeason] = useState(false);
   const [films, setFilms] = useState([]);
   const [type, setType] = useState("1");
 
+  const dispath = useDispatch();
   //
   useEffect(() => {
     AOS.init();
   }, []);
-
-  // đóng, mở start watching
-  const handleStartWatching = () => {
-    setModalStartWatching(!modalStartWatching);
-  };
-
-  // đóng start watching
-  useEffect(() => {
-    function onKeyDown(e) {
-      if (e.keyCode === 27) {
-        setModalStartWatching(false);
-      }
-    }
-    document.addEventListener("keydown", onKeyDown);
-    return () => {
-      document.removeEventListener("keydown", onKeyDown);
-    };
-  });
 
   // show select season
   const handleSelect = () => {
@@ -69,7 +53,11 @@ function Episodes() {
                 <ul key={season}>
                   <li className="w-full hover:bg-[#444548] rounded-md">
                     <button
-                      onClick={() => setType(season)}
+                      onClick={() => {
+                        setType(season);
+                        const action = addType(season);
+                        dispath(action);
+                      }}
                       className="px-5 h-[44px] w-full text-start text-[15px]"
                       style={{
                         display: "",
@@ -86,7 +74,8 @@ function Episodes() {
         {/* render film */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 sm:gap-x-5 lg:gap-x-6 gap-y-10 lg:gap-y-[60px]">
           {films.map((film) => (
-            <div
+            <Link
+              to={`/series-TheX-Files/watch-film/${film.number}`}
               key={film.number}
               data-aos="fade-up"
               data-aos-offset="100"
@@ -99,7 +88,7 @@ function Episodes() {
                   alt={film.name}
                 />
                 <span
-                  onClick={handleStartWatching}
+                  // onClick={handleStartWatching}
                   className="absolute border-[4px] -top-[7px] -bottom-[7px] -left-[7px] z-0 -right-[7px] opacity-0 hover:opacity-100 hover:bg-[#000]/[20%] duration-300 rounded-[16px] border-[#888]"
                 ></span>
               </div>
@@ -115,13 +104,9 @@ function Episodes() {
               <p className="text-[13px] sm:text-[14px] text-textColorPrimary tracking-normal md:tracking-wide">
                 {film.description}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
-      </div>
-      {/* modal StartWatching */}
-      <div>
-        {modalStartWatching && <StartWatching onClick={handleStartWatching} />}
       </div>
     </div>
   );
