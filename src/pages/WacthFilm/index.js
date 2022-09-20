@@ -70,7 +70,7 @@ function WatchFilm() {
               src={film.path}
               alt={film.name}
             />
-            <span className="absolute cursor-pointer top-[34%] sm:top-[34%] lg:top-[38%] left-[46%] text-[#fff] text-[40px] md:-[50px] lg:text-[60px]">
+            <span className="absolute cursor-pointer top-[32%] sm:top-[34%] lg:top-[38%] left-[43%] md:left-[46%] text-[#fff] text-[40px] md:-[50px] lg:text-[60px]">
               <FontAwesomeIcon icon={faCirclePlay} />
             </span>
           </div>
