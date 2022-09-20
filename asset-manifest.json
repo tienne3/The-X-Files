@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/series-TheX-Files/static/css/main.40549b06.css",
-    "main.js": "/series-TheX-Files/static/js/main.cbc18cd0.js",
+    "main.css": "/series-TheX-Files/static/css/main.c40933e2.css",
+    "main.js": "/series-TheX-Files/static/js/main.51d8680b.js",
     "static/js/787.e636e80e.chunk.js": "/series-TheX-Files/static/js/787.e636e80e.chunk.js",
     "static/media/bg3.jpg": "/series-TheX-Files/static/media/bg3.763bd55248c5555b6d7a.jpg",
     "static/media/bg2.jpg": "/series-TheX-Files/static/media/bg2.6d2b7855ea73d56fc47c.jpg",
@@ -17,12 +17,12 @@
     "static/media/Graphik-Light-Web.woff2": "/series-TheX-Files/static/media/Graphik-Light-Web.06004500783e58e6347a.woff2",
     "static/media/bg02.jpg": "/series-TheX-Files/static/media/bg02.12a0a09c9cfd4a66f6d2.jpg",
     "index.html": "/series-TheX-Files/index.html",
-    "main.40549b06.css.map": "/series-TheX-Files/static/css/main.40549b06.css.map",
-    "main.cbc18cd0.js.map": "/series-TheX-Files/static/js/main.cbc18cd0.js.map",
+    "main.c40933e2.css.map": "/series-TheX-Files/static/css/main.c40933e2.css.map",
+    "main.51d8680b.js.map": "/series-TheX-Files/static/js/main.51d8680b.js.map",
     "787.e636e80e.chunk.js.map": "/series-TheX-Files/static/js/787.e636e80e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40549b06.css",
-    "static/js/main.cbc18cd0.js"
+    "static/css/main.c40933e2.css",
+    "static/js/main.51d8680b.js"
   ]
 }
