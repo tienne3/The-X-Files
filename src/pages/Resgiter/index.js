@@ -105,14 +105,14 @@ function Register() {
         </p>
         <button
           style={
-            valueEmail.length > 6 &&
+            valueEmail.length > 5 &&
             valuePassword.length > 0 &&
             valueName.length > 0 &&
             valueDate.length > 0
-              ? { backgroundColor: "#040405" }
+              ? { backgroundColor: "#040405", cursor: "pointer", color: "#fff" }
               : {}
           }
-          className="text-[#b9bfc8] bg-[#444] font-semibold tracking-widest w-[90%] sm:w-[400px] h-[48px] rounded text-[14px]"
+          className="text-[#b9bfc8] cursor-text bg-[#444] font-semibold tracking-widest w-[90%] sm:w-[400px] h-[48px] rounded text-[14px]"
         >
           CONTINUE
         </button>

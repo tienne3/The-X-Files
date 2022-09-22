@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const addSlice = createSlice({
+const addTypeSlice = createSlice({
   name: "type",
   initialState: [1],
   reducers: {
@@ -10,6 +10,6 @@ const addSlice = createSlice({
   },
 });
 
-const { actions, reducer } = addSlice;
+const { actions, reducer } = addTypeSlice;
 export const { addType } = actions;
 export default reducer;

@@ -21,7 +21,6 @@ function Header() {
         setModalMore(false);
       }
     }
-
     document.addEventListener("keydown", onKeyDown);
     return () => {
       document.removeEventListener("keydown", onKeyDown);

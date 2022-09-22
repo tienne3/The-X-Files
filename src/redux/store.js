@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import addSlice from "~/redux/addSlice";
+import addTypeSlice from "~/redux/addTypeSlice";
 
 const store = configureStore({
   reducer: {
-    type: addSlice,
+    type: addTypeSlice,
   },
 });
 

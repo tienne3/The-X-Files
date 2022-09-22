@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addType } from "~/redux/addSlice";
+import { addType } from "~/redux/addTypeSlice";
 
 const seasons = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
 function Episodes() {
@@ -75,7 +75,7 @@ function Episodes() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 sm:gap-x-5 lg:gap-x-6 gap-y-10 lg:gap-y-[60px]">
           {films.map((film) => (
             <Link
-              to={`/series-TheX-Files/watch-film/${film.number}`}
+              to={`/series-TheX-Files/watch-film/tap-${film.number}`}
               key={film.number}
               data-aos="fade-up"
               data-aos-offset="100"
@@ -113,3 +113,5 @@ function Episodes() {
 }
 
 export default memo(Episodes);
+// const total = 160
+// const result = total - 25 -45

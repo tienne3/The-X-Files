@@ -17,7 +17,7 @@ function ModalLogin({ onClick }) {
   return (
     <div
       onClick={onClick}
-      className="modal text-semibold fixed z-50 top-0 bottom-0 left-0 right-0 bg-black/[50%] "
+      className="modal text-semibold fixed z-50 top-0 bottom-0 left-0 right-0 bg-black/[50%]"
     >
       <div
         onClick={(e) => e.stopPropagation()}
@@ -65,11 +65,11 @@ function ModalLogin({ onClick }) {
         <br />
         <button
           style={
-            valueEmail.length > 6 && valuePassword.length > 0
-              ? { backgroundColor: "#000" }
+            valueEmail.length > 5 && valuePassword.length > 0
+              ? { backgroundColor: "#000", cursor: "pointer" }
               : {}
           }
-          className="text-center text-white bg-[#444] w-full rounded h-[48px] mt-8"
+          className="text-center cursor-text text-white bg-[#444] w-full rounded h-[48px] mt-8"
           type={"submit"}
         >
           LOG IN

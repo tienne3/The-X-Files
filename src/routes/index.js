@@ -15,7 +15,7 @@ const publicRoutes = [
   { path: "/fight-the-future", component: FightTheFuture, layout: HeaderOnly },
   { path: "/i-want-to-believe", component: IWantToBelieve, layout: HeaderOnly },
   {
-    path: "/series-TheX-Files/watch-film/:number",
+    path: "/series-TheX-Files/watch-film/tap-:number",
     component: WatchFilm,
   },
   { path: "/payment", component: Payment, layout: HeaderOnly },
