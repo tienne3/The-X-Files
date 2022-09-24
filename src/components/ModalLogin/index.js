@@ -17,7 +17,7 @@ function ModalLogin({ onClick }) {
   return (
     <div
       onClick={onClick}
-      className="modal text-semibold fixed z-50 top-0 bottom-0 left-0 right-0 bg-black/[50%]"
+      className="modal text-semibold fixed z-50 top-0 bottom-0 left-0 right-0 bg-black/[50%] "
     >
       <div
         onClick={(e) => e.stopPropagation()}

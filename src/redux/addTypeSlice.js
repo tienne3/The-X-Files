@@ -1,11 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const typeStg = JSON.parse(localStorage.getItem("typeStg"));
 const addTypeSlice = createSlice({
   name: "type",
-  initialState: [1],
+  initialState: [typeStg || 1],
   reducers: {
     addType(state, action) {
       state.push(action.payload);
+      localStorage.setItem("typeStg", JSON.stringify(action.payload));
     },
   },
 });
