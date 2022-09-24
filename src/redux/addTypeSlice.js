@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const typeStorage = JSON.parse(localStorage.getItem("typeStorage"));
+var typeStorage = JSON.parse(localStorage.getItem("typeStorage"));
 const addTypeSlice = createSlice({
   name: "type",
   initialState: [typeStorage ?? 1],

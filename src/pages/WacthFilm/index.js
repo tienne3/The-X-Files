@@ -6,10 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faCirclePlay } from "@fortawesome/free-regular-svg-icons";
 import StartWatching from "~/components/StartWatching";
+// import { useSelector } from "react-redux";
+// import { useDispatch } from "react-redux";
 
 function WatchFilm() {
   const id = useParams();
-  const seasonNumber = JSON.parse(localStorage.getItem("typeStorage"));
+  // const types = useSelector((state) => state.type);
+  // const seasonNumber = types[types.length - 1];
+
+  let seasonType = localStorage.getItem("typeStorage");
 
   const [films, setFilms] = useState([]);
   const [modalStartWatching, setModalStartWatching] = useState(false);
@@ -19,13 +24,13 @@ function WatchFilm() {
   useEffect(() => {
     axios
       .get(
-        `https://6303b2bc0de3cd918b3c60e9.mockapi.io/series/Season-/${seasonNumber}`
+        `https://6303b2bc0de3cd918b3c60e9.mockapi.io/series/Season-/${seasonType}`
       )
       .then((res) => {
         setFilms([res.data.items[id.number - 1]]);
         setEpisodes(res.data.items);
       });
-  }, [seasonNumber]);
+  }, [seasonType]);
 
   // đóng, mở start watching
   const handleStartWatching = () => {
@@ -50,9 +55,7 @@ function WatchFilm() {
       <div className="md:pl-10 p-5">
         <Link
           to={"/series-TheX-Files"}
-          onClick={() => {
-            localStorage.setItem("typeStorage", JSON.stringify(1));
-          }}
+          onClick={() => localStorage.setItem("typeStorage", 1)}
         >
           <button className="px-4 py-2 md:px-5 md:py-[10px] bg-[#ccc] hover:bg-primary flex justify-center items-center rounded-sm">
             <FontAwesomeIcon icon={faChevronLeft} />
@@ -105,19 +108,13 @@ function WatchFilm() {
               <p className="text-[15px] mb-1 font-semibold">Select Episode:</p>
               <ul className="flex flex-wrap">
                 {episodes.map((episode) => (
-                  <li
-                    key={episode.number}
-                    onClick={() => {
-                      // eslint-disable-next-line no-restricted-globals
-                      location.reload();
-                    }}
-                  >
-                    <Link
-                      to={`/series-TheX-Files/watch-film/tap-${episode.number}`}
+                  <li key={episode.number}>
+                    <a
+                      href={`/series-TheX-Files/watch-film/tap-${episode.number}`}
                       className="flex justify-center items-center text-[14px] rounded-md px-2 py-[2px] w-[40px] border border-[#888] hover:bg-violet-300 m-1"
                     >
                       {episode.number}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>

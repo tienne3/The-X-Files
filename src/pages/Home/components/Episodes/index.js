@@ -14,6 +14,8 @@ function Episodes() {
   const [films, setFilms] = useState([]);
   const [type, setType] = useState(1);
 
+  let seasonType = localStorage.getItem("typeStorage");
+
   const dispath = useDispatch();
   //
   useEffect(() => {
@@ -28,11 +30,13 @@ function Episodes() {
   // call api
   useEffect(() => {
     axios
-      .get(`https://6303b2bc0de3cd918b3c60e9.mockapi.io/series/Season-/${type}`)
+      .get(
+        `https://6303b2bc0de3cd918b3c60e9.mockapi.io/series/Season-/${seasonType}`
+      )
       .then((res) => {
         setFilms(res.data.items);
       });
-  }, [type]);
+  }, [seasonType]);
 
   return (
     <div className="mt-10">
@@ -40,7 +44,7 @@ function Episodes() {
         {/* btn season */}
         <div onClick={handleSelect} className="relative w-[280px]">
           <button className="z-50 mb-[50px] w-[280px] px-5 flex justify-between items-center h-[48px] bg-[#272C34] text-white text-[15px] rounded-md hover:bg-[#444548] duration-200">
-            {`Season ${type}`}
+            {`Season ${seasonType}`}
             <span className="ml-10">
               <FontAwesomeIcon icon={faChevronDown} />
             </span>
@@ -87,10 +91,7 @@ function Episodes() {
                   src={film.path}
                   alt={film.name}
                 />
-                <span
-                  // onClick={handleStartWatching}
-                  className="absolute border-[4px] -top-[7px] -bottom-[7px] -left-[7px] z-0 -right-[7px] opacity-0 hover:opacity-100 hover:bg-[#000]/[20%] duration-300 rounded-[16px] border-[#888]"
-                ></span>
+                <span className="absolute border-[4px] -top-[7px] -bottom-[7px] -left-[7px] z-0 -right-[7px] opacity-0 hover:opacity-100 hover:bg-[#000]/[20%] duration-300 rounded-[16px] border-[#888]"></span>
               </div>
               {/* film number */}
               <p className="text-[12px] text-[#272C34] font-medium tracking-wider pt-2 py-1">
