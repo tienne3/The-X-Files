@@ -13,7 +13,6 @@ function WatchFilm() {
   let seasonType = localStorage.getItem("typeStorage");
 
   const [idNew, setIdNew] = useState(id);
-
   const [films, setFilms] = useState([]);
   const [modalStartWatching, setModalStartWatching] = useState(false);
   const [episodes, setEpisodes] = useState([]);
@@ -27,7 +26,6 @@ function WatchFilm() {
       )
       .then((res) => {
         setFilms([res.data.items[idNew]]);
-
         setEpisodes(res.data.items);
       });
   }, [seasonType, idNew]);
