@@ -6,19 +6,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faCirclePlay } from "@fortawesome/free-regular-svg-icons";
 import StartWatching from "~/components/StartWatching";
-// import { useSelector } from "react-redux";
-// import { useDispatch } from "react-redux";
 
 function WatchFilm() {
-  const id = useParams();
-  // const types = useSelector((state) => state.type);
-  // const seasonNumber = types[types.length - 1];
-
+  const idNumber = useParams();
+  const id = idNumber.number - 1;
   let seasonType = localStorage.getItem("typeStorage");
+
+  const [idNew, setIdNew] = useState(id);
 
   const [films, setFilms] = useState([]);
   const [modalStartWatching, setModalStartWatching] = useState(false);
   const [episodes, setEpisodes] = useState([]);
+  const [active, setActive] = useState(id);
 
   // call api
   useEffect(() => {
@@ -27,10 +26,11 @@ function WatchFilm() {
         `https://6303b2bc0de3cd918b3c60e9.mockapi.io/series/Season-/${seasonType}`
       )
       .then((res) => {
-        setFilms([res.data.items[id.number - 1]]);
+        setFilms([res.data.items[idNew]]);
+
         setEpisodes(res.data.items);
       });
-  }, [seasonType]);
+  }, [seasonType, idNew]);
 
   // đóng, mở start watching
   const handleStartWatching = () => {
@@ -107,14 +107,24 @@ function WatchFilm() {
             <div className="mt-5">
               <p className="text-[15px] mb-1 font-semibold">Select Episode:</p>
               <ul className="flex flex-wrap">
-                {episodes.map((episode) => (
-                  <li key={episode.number}>
-                    <a
-                      href={`/series-TheX-Files/watch-film/tap-${episode.number}`}
-                      className="flex justify-center items-center text-[14px] rounded-md px-2 py-[2px] w-[40px] border border-[#888] hover:bg-violet-300 m-1"
+                {episodes.map((episode, index) => (
+                  <li
+                    className="m-1"
+                    key={episode.number}
+                    onClick={() => {
+                      setIdNew(episode.number - 1);
+                      setActive(index);
+                    }}
+                    style={
+                      active === index ? { backgroundColor: "#1ce783" } : {}
+                    }
+                  >
+                    <Link
+                      to={`/watch-film/tap-${episode.number}`}
+                      className="flex justify-center items-center text-[14px] rounded-md px-2 py-[2px] w-[40px] border border-[#888] hover:bg-primary"
                     >
                       {episode.number}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

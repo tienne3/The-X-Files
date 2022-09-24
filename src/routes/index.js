@@ -1,3 +1,5 @@
+import routesConfig from "~/config/routes";
+
 // Layout
 import DefaultLayout, { HeaderOnly } from "~/layouts";
 
@@ -11,17 +13,25 @@ import WatchFilm from "~/pages/WacthFilm";
 
 // Public Routes
 const publicRoutes = [
-  { path: "/series-TheX-Files", component: Home },
-  { path: "/fight-the-future", component: FightTheFuture, layout: HeaderOnly },
-  { path: "/i-want-to-believe", component: IWantToBelieve, layout: HeaderOnly },
+  { path: routesConfig.home, component: Home },
   {
-    path: "/series-TheX-Files/watch-film/tap-:number",
+    path: routesConfig.fightTheFuture,
+    component: FightTheFuture,
+    layout: HeaderOnly,
+  },
+  {
+    path: routesConfig.iWantToBelieve,
+    component: IWantToBelieve,
+    layout: HeaderOnly,
+  },
+  {
+    path: routesConfig.watchFilm,
     component: WatchFilm,
     layout: DefaultLayout,
   },
-  { path: "/payment", component: Payment, layout: HeaderOnly },
-  { path: "/register", component: Register, layout: HeaderOnly },
-  { path: "/terms-apply", component: TermsApply, layout: HeaderOnly },
+  { path: routesConfig.payment, component: Payment, layout: HeaderOnly },
+  { path: routesConfig.register, component: Register, layout: HeaderOnly },
+  { path: routesConfig.termsApply, component: TermsApply, layout: HeaderOnly },
 ];
 
 const privateRoutes = [];

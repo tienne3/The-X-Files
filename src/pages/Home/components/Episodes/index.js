@@ -10,11 +10,10 @@ import { addType } from "~/redux/addTypeSlice";
 
 const seasons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 function Episodes() {
+  let seasonType = localStorage.getItem("typeStorage");
   const [showSelectSeason, setShowSelectSeason] = useState(false);
   const [films, setFilms] = useState([]);
-  const [type, setType] = useState(1);
-
-  let seasonType = localStorage.getItem("typeStorage");
+  const [type, setType] = useState(seasonType);
 
   const dispath = useDispatch();
   //
@@ -30,13 +29,11 @@ function Episodes() {
   // call api
   useEffect(() => {
     axios
-      .get(
-        `https://6303b2bc0de3cd918b3c60e9.mockapi.io/series/Season-/${seasonType}`
-      )
+      .get(`https://6303b2bc0de3cd918b3c60e9.mockapi.io/series/Season-/${type}`)
       .then((res) => {
         setFilms(res.data.items);
       });
-  }, [seasonType]);
+  }, [type]);
 
   return (
     <div className="mt-10">
@@ -79,7 +76,7 @@ function Episodes() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 sm:gap-x-5 lg:gap-x-6 gap-y-10 lg:gap-y-[60px]">
           {films.map((film) => (
             <Link
-              to={`/series-TheX-Files/watch-film/tap-${film.number}`}
+              to={`/watch-film/tap-${film.number}`}
               key={film.number}
               data-aos="fade-up"
               data-aos-offset="100"
