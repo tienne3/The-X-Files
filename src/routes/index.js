@@ -1,5 +1,5 @@
 // Layout
-import { HeaderOnly } from "~/layouts";
+import DefaultLayout, { HeaderOnly } from "~/layouts";
 
 import Home from "~/pages/Home";
 import Payment from "~/pages/Payment";
@@ -17,6 +17,7 @@ const publicRoutes = [
   {
     path: "/series-TheX-Files/watch-film/tap-:number",
     component: WatchFilm,
+    layout: DefaultLayout,
   },
   { path: "/payment", component: Payment, layout: HeaderOnly },
   { path: "/register", component: Register, layout: HeaderOnly },

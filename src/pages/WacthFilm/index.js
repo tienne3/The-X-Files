@@ -114,10 +114,9 @@ function WatchFilm() {
                   >
                     <Link
                       to={`/series-TheX-Files/watch-film/tap-${episode.number}`}
+                      className="flex justify-center items-center text-[14px] rounded-md px-2 py-[2px] w-[40px] border border-[#888] hover:bg-violet-300 m-1"
                     >
-                      <button className="flex justify-center items-center text-[14px] rounded-md px-2 py-[2px] w-[40px] border border-[#888] hover:bg-violet-300 m-1">
-                        {episode.number}
-                      </button>
+                      {episode.number}
                     </Link>
                   </li>
                 ))}
