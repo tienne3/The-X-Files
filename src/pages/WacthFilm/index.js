@@ -1,24 +1,19 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faCirclePlay } from "@fortawesome/free-regular-svg-icons";
 import StartWatching from "~/components/StartWatching";
-import { useDispatch } from "react-redux";
 
 function WatchFilm() {
   const id = useParams();
-  const types = useSelector((state) => state.type);
-  const seasonNumber = types[types.length - 1];
+  const seasonNumber = JSON.parse(localStorage.getItem("typeStorage"));
 
   const [films, setFilms] = useState([]);
   const [modalStartWatching, setModalStartWatching] = useState(false);
   const [episodes, setEpisodes] = useState([]);
-
-  const dispath = useDispatch();
 
   // call api
   useEffect(() => {
@@ -53,7 +48,12 @@ function WatchFilm() {
   return (
     <div>
       <div className="md:pl-10 p-5">
-        <Link to={"/series-TheX-Files"} onClick={() => dispath(1)}>
+        <Link
+          to={"/series-TheX-Files"}
+          onClick={() => {
+            localStorage.setItem("typeStorage", JSON.stringify(1));
+          }}
+        >
           <button className="px-4 py-2 md:px-5 md:py-[10px] bg-[#ccc] hover:bg-primary flex justify-center items-center rounded-sm">
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>
@@ -105,8 +105,13 @@ function WatchFilm() {
               <p className="text-[15px] mb-1 font-semibold">Select Episode:</p>
               <ul className="flex flex-wrap">
                 {episodes.map((episode) => (
-                  // eslint-disable-next-line no-restricted-globals
-                  <li key={episode.number} onClick={() => location.reload()}>
+                  <li
+                    key={episode.number}
+                    onClick={() => {
+                      // eslint-disable-next-line no-restricted-globals
+                      location.reload();
+                    }}
+                  >
                     <Link
                       to={`/series-TheX-Files/watch-film/tap-${episode.number}`}
                     >

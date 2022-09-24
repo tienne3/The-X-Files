@@ -8,11 +8,11 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addType } from "~/redux/addTypeSlice";
 
-const seasons = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
+const seasons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 function Episodes() {
   const [showSelectSeason, setShowSelectSeason] = useState(false);
   const [films, setFilms] = useState([]);
-  const [type, setType] = useState("1");
+  const [type, setType] = useState(1);
 
   const dispath = useDispatch();
   //
