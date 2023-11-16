@@ -13,7 +13,7 @@ function Episodes() {
   let seasonType = localStorage.getItem("typeStorage");
   const [showSelectSeason, setShowSelectSeason] = useState(false);
   const [films, setFilms] = useState([]);
-  const [type, setType] = useState(seasonType);
+  const [type, setType] = useState(seasonType || 1);
 
   const dispath = useDispatch();
   //
@@ -41,7 +41,7 @@ function Episodes() {
         {/* btn season */}
         <div onClick={handleSelect} className="relative w-[280px]">
           <button className="z-50 mb-[50px] w-[280px] px-5 flex justify-between items-center h-[48px] bg-[#272C34] text-white text-[15px] rounded-md hover:bg-[#444548] duration-200">
-            {`Season ${seasonType}`}
+            {`Season ${seasonType || 1}`}
             <span className="ml-10">
               <FontAwesomeIcon icon={faChevronDown} />
             </span>

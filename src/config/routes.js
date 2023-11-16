@@ -1,5 +1,5 @@
 const routes = {
-  home: "/series-TheX-Files",
+  home: "/",
   fightTheFuture: "/fight-the-future",
   iWantToBelieve: "/i-want-to-believe",
   watchFilm: "/watch-film/tap-:number",

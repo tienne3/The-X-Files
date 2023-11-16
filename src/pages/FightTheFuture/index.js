@@ -1,9 +1,9 @@
 import SelectYourPlan from "~/components/SelectYourPlan";
 import YouMayLAlsoLike from "~/components/YouMayLAlsoLike";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DetailsFightTheFuture from "./components/DetailsFightTheFuture";
 import ItemsFightTheFuture from "./components/ItemsFightTheFuture";
-import Footer from "~/layouts/components/Footer";
+import Footer from "~/Layouts/components/Footer";
 import HeaderFightTheFuture from "./components/HeaderFightTheFuture";
 import BtnGoToTop from "~/components/BtnGoToTop";
 

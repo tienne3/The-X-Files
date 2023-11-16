@@ -1,7 +1,7 @@
 import routesConfig from "~/config/routes";
 
 // Layout
-import DefaultLayout, { HeaderOnly } from "~/layouts";
+import DefaultLayout, { HeaderOnly } from "~/Layouts";
 
 import Home from "~/pages/Home";
 import Payment from "~/pages/Payment";
