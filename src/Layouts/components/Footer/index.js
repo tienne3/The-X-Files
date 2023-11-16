@@ -103,7 +103,7 @@ function Footer() {
           <p>
             Design by
             <span className="hover:text-red-600 ml-1 font-medium hover:cursor-pointer">
-              Tiến Bry
+              Tiến VM
             </span>
           </p>
         </div>
