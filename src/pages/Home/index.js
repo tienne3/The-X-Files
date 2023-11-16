@@ -11,6 +11,9 @@ const tabs = ["EPISODES", "EXTRAS", "DETAILS"];
 // this is homepage
 function Home() {
   const [type, setType] = useState("EPISODES");
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <div className="wrapper">

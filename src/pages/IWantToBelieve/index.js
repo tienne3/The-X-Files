@@ -11,6 +11,10 @@ const tabs = ["YOU MAY ALSO LIKE", "DETAILS"];
 function IWantToBelieve() {
   const [type, setType] = useState("YOU MAY ALSO LIKE");
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div>
       <HeaderIWantToBelieve />
