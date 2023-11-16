@@ -11,7 +11,7 @@ function YouMayLAlsoLike() {
   useEffect(() => {
     axios
       .get(
-        "https://630776783a2114bac76317d9.mockapi.io/series/fight-the-future"
+        "https://630776783a2114bac76317d9.mockapi.io/series/fight-the-future",
       )
       .then((res) => setFilms(res.data));
   }, []);
@@ -28,7 +28,7 @@ function YouMayLAlsoLike() {
               to={
                 (film.id === "1" && "/i-want-to-believe") ||
                 (film.id === "2" && "/fight-the-future") ||
-                (film.id === "3" && "/series-TheX-Files")
+                (film.id === "3" && "/")
               }
             >
               {/* img */}

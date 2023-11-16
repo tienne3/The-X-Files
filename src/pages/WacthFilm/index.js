@@ -22,7 +22,7 @@ function WatchFilm() {
   useEffect(() => {
     axios
       .get(
-        `https://6303b2bc0de3cd918b3c60e9.mockapi.io/series/Season-/${seasonType}`
+        `https://6303b2bc0de3cd918b3c60e9.mockapi.io/series/Season-/${seasonType}`,
       )
       .then((res) => {
         setFilms([res.data.items[idNew]]);
@@ -51,10 +51,7 @@ function WatchFilm() {
   return (
     <div>
       <div className="md:pl-10 p-5">
-        <Link
-          to={"/series-TheX-Files"}
-          onClick={() => localStorage.setItem("typeStorage", 1)}
-        >
+        <Link to={"/"} onClick={() => localStorage.setItem("typeStorage", 1)}>
           <button className="px-4 py-2 md:px-5 md:py-[10px] bg-[#ccc] hover:bg-primary flex justify-center items-center rounded-sm">
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>

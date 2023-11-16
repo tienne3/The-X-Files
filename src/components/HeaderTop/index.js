@@ -36,7 +36,7 @@ function HeaderTop() {
   return (
     <div className="flex items-center justify-between mx-6 md:mx-10">
       {/* logo hulu */}
-      <Link to={"/series-TheX-Files"}>
+      <Link to={"/"}>
         <LogoSvg />
       </Link>
 

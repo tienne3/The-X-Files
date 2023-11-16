@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import VideoIntro from "~/assets/videos";
 import Details from "~/pages/Home/components/Details";
 import Episodes from "./components/Episodes";

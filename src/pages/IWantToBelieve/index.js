@@ -1,15 +1,16 @@
 import SelectYourPlan from "~/components/SelectYourPlan";
 import YouMayLAlsoLike from "~/components/YouMayLAlsoLike";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DetailsIWantToBelieve from "./components/DetailsIWantToBelieve";
 import ItemsIWantToBelieve from "./components/ItemsIWantToBelieve";
-import Footer from "~/layouts/components/Footer";
+import Footer from "~/Layouts/components/Footer";
 import HeaderIWantToBelieve from "./components/HeaderIWantToBelieve";
 import BtnGoToTop from "~/components/BtnGoToTop";
 
 const tabs = ["YOU MAY ALSO LIKE", "DETAILS"];
 function IWantToBelieve() {
   const [type, setType] = useState("YOU MAY ALSO LIKE");
+
   return (
     <div>
       <HeaderIWantToBelieve />
