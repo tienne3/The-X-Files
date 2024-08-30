@@ -1,7 +1,7 @@
 {
   "name": "",
   "version": "0.1.0",
-  "homepage": "https://tienne3.github.io/series-TheX-Files",
+  "homepage": "https://tienne3.github.io",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
@@ -35,7 +35,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "main -d build",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
